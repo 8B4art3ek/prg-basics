@@ -397,7 +397,7 @@ stalj@uek.krakow.pl
     window.mainloop()
     ```
 
-## 7. Practice Makes Perfect
+## 6. Practice Makes Perfect
 
 1. Read the chapter in your class textbook that covers the topics in this section.
 
