@@ -38,3 +38,14 @@ def letter_calculation(letter, text):
 
 def check_number(number, x, y):
     return x <= number <= y
+
+
+# f("5290312400019022") returns "52**********9022"   16 digits
+def hide(card_number):
+    result = ""
+    for i in range(len(card_number)):
+        if 2 <= i < 12:
+            result += "*"
+        else:
+            result += card_number[i]
+    return result
