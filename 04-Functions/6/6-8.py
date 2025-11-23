@@ -23,4 +23,5 @@ def f(amount_to_pay):
     coins = coins_1 + coins_2 + coins_5
     return coins
 
-print(f(23))
+if __name__ == "__main__":
+    print(f(23))

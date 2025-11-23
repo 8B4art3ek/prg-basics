@@ -5,4 +5,5 @@
 
 import separate_module
 
-print(f"Number 7 in the range <2,15>: {separate_module.check_number(7, 2, 15)}")
+if __name__ == "__main__":
+    print(f"Number 7 in the range <2,15>: {separate_module.check_number(7, 2, 15)}")

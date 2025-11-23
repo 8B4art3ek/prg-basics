@@ -10,5 +10,6 @@ def f(x,y):
             counter += 1
     return counter
 
-print(f(-7,8))
-print(f(-1,11))
+if __name__ == "__main__":
+    print(f(-7,8))
+    print(f(-1,11))

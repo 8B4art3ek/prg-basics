@@ -4,5 +4,6 @@
 
 import separate_module
 
-card_number = input("Podaj numer karty: ")
-print(separate_module.hide(card_number))
+if __name__ == "__main__":
+    card_number = input("Podaj numer karty: ")
+    print(separate_module.hide(card_number))

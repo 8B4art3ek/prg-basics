@@ -9,5 +9,7 @@ def f(n):
         result += str(i)
     return result
 
-print(f(11))
-print(f(4))
+
+if __name__ == "__main__":
+    print(f(11))
+    print(f(4))

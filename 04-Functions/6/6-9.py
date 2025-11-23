@@ -18,8 +18,10 @@ def f(number, even):
                 suma += int(digit)
     return suma
 
-print(f(3124,True))
-print(f(3124,False))
-print(f(20576,False))
-print(f(20576,True))
-print(f(13115,True))
+
+if __name__ == "__main__":
+    print(f(3124,True))
+    print(f(3124,False))
+    print(f(20576,False))
+    print(f(20576,True))
+    print(f(13115,True))

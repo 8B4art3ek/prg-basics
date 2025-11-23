@@ -9,4 +9,5 @@ def f(binary_number):
             return False
     return True
     
-print(f("1311a10100"))
+if __name__ == "__main__":
+    print(f("1311a10100"))

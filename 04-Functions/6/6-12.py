@@ -10,5 +10,6 @@ def f(n):
         result += sign + '/'
     return result[:-1]
 
-print(f(4))
-print(f(1))
+if __name__ == "__main__":
+    print(f(4))
+    print(f(1))
