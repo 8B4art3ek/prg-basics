@@ -6,6 +6,7 @@ def f(name):
     
     return result
 
-print(f("Internet of Things"))
-print(f("For Your Information"))
-print(f("Python"))
+if __name__ == "__main__":
+    print(f("Internet of Things"))
+    print(f("For Your Information"))
+    print(f("Python"))
