@@ -6,3 +6,25 @@
 # f(2,3, "*") returns 6
 # f(2,3, "-") returns -1
 
+def f(number1, number2, operator):
+    match operator:
+        case "+":
+            return number1 + number2
+        case "-":
+            return number1 - number2
+        case "*":
+            return number1 * number2
+        case "%":
+            if number2 == 0:
+                return "Nie mozna dzielic przez 0"
+            else: 
+                return number1 % number2
+        case "**":
+            return number1 ** number2
+        
+if __name__ == "__main__":
+    print(f(2,3, "+"))
+    print(f(2,3, "%"))
+    print(f(2,3, "**"))
+    print(f(2,3, "*"))
+    print(f(2,3, "-"))
