@@ -9,8 +9,8 @@ def f(number):
     result = 0
 
     for digit in number:
-        if number.count(digit) > 1: #czy duplikat?
-            if str(result).count(digit) == 0: #żeby nie dodawać 2 razy
+        if number.count(digit) > 1:                 #czy duplikat?
+            if str(result).count(digit) == 0:       #żeby nie dodawać 2 razy
                 result += int(digit)
     return result
 

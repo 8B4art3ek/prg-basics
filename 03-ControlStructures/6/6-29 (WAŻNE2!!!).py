@@ -6,10 +6,10 @@ import math
 
 n = int(input("Enter number: "))
 
-counter = 0
+counter_is_prime = 0
 num = 2    # pierwsza liczba pierwsza
 
-while counter < n:
+while counter_is_prime < n:
     is_prime = True
 
     for i in range(2, int(math.sqrt(num)) + 1):
@@ -19,6 +19,6 @@ while counter < n:
     
     if is_prime:
         print(num, end=" ")
-        counter += 1
+        counter_is_prime += 1
     
     num += 1
