@@ -1,0 +1,2 @@
+# (p6.py) Zdefiniuj funkcję f(years, course, average_grade), która dla pliku data.json zwraca liczbę studentów, którzy mają co najmniej podaną liczbę lat i średnią ocen co najmniej average_grade z podanej nazwy kursu. 
+# Przykład: f(21, "statistics", 4) porównaj swój wynik z innymi studentami

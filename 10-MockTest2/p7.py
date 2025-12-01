@@ -1,0 +1,2 @@
+# (p7.py) Poprawna nazwa użytkownika składa się z 4 do 12 znaków: małych liter, cyfr i znaku podkreślenia. Zdefiniuj funkcję f(array), która dla danej tablicy nazw użytkowników zwraca liczbę poprawnych nazw użytkowników w tablicy. 
+# Przykład: f(["uek", "water_7_x", "anna.may", "a_b_c_d_e_f"]) → 2
