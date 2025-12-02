@@ -497,42 +497,42 @@ stalj@uek.krakow.pl
    ```
  > **Hint: Don't forget to import the random module before using random.randint**
 
-1. An array contains integer numbers: 34,7,19,4,21,8. Create a program that calculates and prints the number of even values in the array. Use the ‘while’ loop statement.
+1. Tablica zawiera liczby całkowite: 34,7,19,4,21,8. Stwórz program, który oblicza i wypisuje liczbę parzystych wartości w tablicy. Użyj instrukcji pętli ‘while’.
 
-1. An array contains natural numbers: 15, 8, 31, 47, 2, 19. Create a program that prints the contents of the array in reverse order. Use any loop statement. Sample result:
+1. Tablica zawiera liczby naturalne: 15, 8, 31, 47, 2, 19. Stwórz program, który wypisuje zawartość tablicy w odwrotnej kolejności. Użyj dowolnej pętli. Przykładowy wynik:
 
    ```python
    existed array: 15 8 31 47 2 19 
    reverse array: 19 2 47 31 8 15
    ```
 
-1. Create a program that computes the second power of each array element. Sample result:
+1. Stwórz program, który oblicza drugą potęgę każdego elementu tablicy. Przykładowy wynik:
 
    ```python
    Array: 8 2 5 1 9
    2nd power: 64 4 25 1 81
    ```
 
-1. An array contains numbers: -15, 8, -31, 47, -2, 19. Create a program that finds and prints the maximum and minimum number. Do not use available functions.
+1. Tablica zawiera liczby: -15, 8, -31, 47, -2, 19. Stwórz program, który znajduje i wypisuje największą oraz najmniejszą liczbę. Nie używaj dostępnych (wbudowanych) funkcji.
 
-1. An array contains values: 15, 8, 31, 47, 2, 19. Create a program that calculates and prints the array and the arithmetic mean of array values. Use the “for” loop statement.
+1. Tablica zawiera wartości: 15, 8, 31, 47, 2, 19. Stwórz program, który oblicza i wypisuje tablicę oraz średnią arytmetyczną wartości tablicy. Użyj instrukcji pętli „for”.
 
-1. An array contains values: 15, 8, 31, 47, 2, 19. Create a program that calculates and prints the array and the arithmetic mean of array values. Use the “while” loop statement.
+1. Tablica zawiera wartości: 15, 8, 31, 47, 2, 19. Stwórz program, który oblicza i wypisuje tablicę oraz średnią arytmetyczną wartości tablicy. Użyj instrukcji pętli „while”.
 
-1. An array contains a list of Polish names:
+1. Tablica zawiera listę polskich imion:
 
    ```
    Genowefa, Onufry, Celestyna, Alojzy, Pankracy
    ```
 
-   Create a program that prints the longest name (consisting of the largest number of characters). Sample result:
+   Stwórz program, który wypisuje najdłuższe imię (składające się z największej liczby znaków). Przykładowy wynik:
 
    ```
    Names: Genowefa Onufry Celestyna Alojzy Pankracy
    Longest name: Celestyna
    ```
 
-1. An array contains integer numbers: 2, 6, 4, 9, 7. Create a program that prints the array values graphically as below. Define a function star(n) that returns the given number of asterisks as a string. Use a defined function in the program.
+1. Tablica zawiera liczby całkowite: 2, 6, 4, 9, 7. Stwórz program, który wypisuje wartości tablicy graficznie, jak poniżej. Zdefiniuj funkcję star(n), która zwraca zadaną liczbę gwiazdek jako ciąg znaków (string). Użyj zdefiniowanej funkcji w programie.
 
    ```python
    2: **
@@ -542,7 +542,7 @@ stalj@uek.krakow.pl
    7: *******
    ```
 
-1. Define a function compare(array1, array2) that returns True if both arrays are the same or False otherwise.  Two arrays are the same if they have the same number of elements and values of elements in cells of arrays with the same index are equal. Then create a program and try to compare the following arrays: 
+1. Zdefiniuj funkcję compare(array1, array2), która zwraca True, jeśli obie tablice są takie same, lub False w przeciwnym wypadku. Dwie tablice są takie same, jeśli mają tę samą liczbę elementów, a wartości elementów w komórkach o tym samym indeksie są równe. Następnie stwórz program i spróbuj porównać następujące tablice: 
 
    ```python
    1. ["water","book","sky"]   ["water","book","sky"]
@@ -551,7 +551,7 @@ stalj@uek.krakow.pl
    1. [3,2,1]   [3,2]
    ```
 
-   Print both arrays and the result of comparison. Sample result:
+   Wypisz obie tablice oraz wynik porównania. Przykładowy wynik:
 
    ```python
    Array1: water book sky
@@ -559,18 +559,18 @@ stalj@uek.krakow.pl
    Comparison: arrays are the same
    ```
 
-1. Two arrays contain the following integer numbers [4,36,12,28,9,44,5] and [5,1,36]. Create a program that prints the numbers from the first array that do not appear in the second array.
+1. Dwie tablice zawierają następujące liczby całkowite [4,36,12,28,9,44,5] oraz [5,1,36]. Stwórz program, który wypisuje liczby z pierwszej tablicy, które nie występują w drugiej tablicy.
 
-1. Create a program that sorts elements of an array containing integer numbers. Apply the Bubble Sort sorting algorithm. Define a function bubblesort(array) that returns the sorted array. Try to sort and print any three arrays.
+1. Stwórz program, który sortuje elementy tablicy zawierającej liczby całkowite. Zastosuj algorytm sortowania bąbelkowego (Bubble Sort). Zdefiniuj funkcję bubblesort(array), która zwraca posortowaną tablicę. Spróbuj posortować i wypisać dowolne trzy tablice.
 
-1. Create a program that prints all unique elements in an array. Sample result:
+1. Stwórz program, który wypisuje wszystkie unikalne elementy w tablicy. Przykładowy wynik:
 
    ```python
    Array: 2 3 2 5 8 1 9 8
    Unique elements: 3 5 1 9
    ```
 
-1. Define a function occurs(number, array) that returns True if a given number is present in an array. Then create a program that checks whether the number entered from the keyboard is present in the array [15, 38, 7, 23, 14]. Sample result:
+1. Zdefiniuj funkcję occurs(number, array), która zwraca True, jeśli podana liczba znajduje się w tablicy. Następnie stwórz program, który sprawdza, czy liczba wprowadzona z klawiatury jest obecna w tablicy [15, 38, 7, 23, 14]. Przykładowy wynik:
 
    ```python   
    Number: 23
@@ -578,22 +578,22 @@ stalj@uek.krakow.pl
    Result: number 23 appears in the array
    ```
 
-1. A tuple in Python is an immutable, ordered collection of elements. Tuples are similar to lists, but unlike lists, once a tuple is created, its elements cannot be modified, added, or removed.
+1. Krotka (tuple) w Pythonie to niezmienna, uporządkowana kolekcja elementów. Krotki są podobne do list, ale w przeciwieństwie do list, po utworzeniu krotki jej elementy nie mogą być modyfikowane, dodawane ani usuwane.
 
-   Write a program that creates a tuple containing a single word ‘computation’. Save a tuple in a variable. Then, print the type of the variable.
+   Napisz program, który tworzy krotkę zawierającą pojedyncze słowo ‘computation’. Zapisz krotkę w zmiennej. Następnie wypisz typ zmiennej.
 
-1. Write a program that prints the tuple (10,20,30,40,50) in reverse order. Sample result:
+1. Napisz program, który wypisuje krotkę (10,20,30,40,50) w odwrotnej kolejności. Przykładowy wynik:
 
    ```python
    Tuple: 10,20,30,40,50
    Reverse order: 50,40,30,20,10
    ```
 
-1. Write a program that for the tuple ("Seven", [10, 20, 30], (5, 15, 25)) prints values:
+1. Napisz program, który dla krotki ("Seven", [10, 20, 30], (5, 15, 25)) wypisuje wartości:
    1. “Seven”
    1. 30
 
-1. Write a program that counts the number of occurrences of any value from a tuple. Sample result:
+1. Napisz program, który zlicza liczbę wystąpień dowolnej wartości z krotki. Przykładowy wynik:
 
    ```python
    Tuple: 50,20,40,50,30,50
@@ -601,27 +601,27 @@ stalj@uek.krakow.pl
    Number of occurrences: 3
    ```
 
-1. Create a module MyArrays containing functions to operate on an array of numbers:
+1. Stwórz moduł MyArrays zawierający funkcje do operacji na tablicy liczb:
 
-   1. A function that returns the second largest element in an array
-   1. A function that returns the difference between the largest and smallest values in an array
-   1. A function that returns the median of numbers in an array. 
+   1. Funkcję, która zwraca drugi co do wielkości element w tablicy
+   1. Funkcję, która zwraca różnicę między największą a najmniejszą wartością w tablicy
+   1. Funkcję, która zwraca medianę liczb w tablicy. 
    
-   Do not use built-in functions. The median is the middle value in the ordered sequence of numbers:
+   Nie używaj wbudowanych funkcji. Mediana to środkowa wartość w uporządkowanym ciągu liczb:
 
       <https://en.wikipedia.org/wiki/Median#/media/File:Finding_the_median.png> 
 
-   1. A function that returns a two-element array containing the smallest and largest values in an array
+   1. Funkcję, która zwraca dwuelementową tablicę zawierającą najmniejszą i największą wartość w tablicy
    
-   1. A function that returns array elements as a string, separated by the minus sign
+   1. Funkcję, która zwraca elementy tablicy jako ciąg znaków (string), oddzielone znakiem minus
 
-   Then, write a program that for the sequence of numbers:
+   Następnie napisz program, który dla ciągu liczb:
 
    ```python
    7,3,8,5,2
    ```
 
-   calculates and prints results. Sample result:
+   oblicza i wypisuje wyniki. Przykładowy wynik:
 
    ```
    Numbers: 7,3,8,5,2
@@ -631,11 +631,11 @@ stalj@uek.krakow.pl
    Numbers as a string: 7-3-8-5-2
    ```
 
-1. Write a program that, for the given array of real numbers, prints the number of elements that are greater than the given value entered from the keyboard.
+1. Napisz program, który dla danej tablicy liczb rzeczywistych wypisuje liczbę elementów, które są większe od podanej wartości wprowadzonej z klawiatury.
 
-1. Write a program to separate even and odd numbers of a given array of integers. Put all even numbers first, and then odd numbers.
+1. Napisz program, aby rozdzielić liczby parzyste i nieparzyste z danej tablicy liczb całkowitych. Umieść wszystkie liczby parzyste na początku, a następnie liczby nieparzyste.
 
-   Sample result:
+   Przykładowy wynik:
 
    ```python
    arr = [7,9,2,4,5,6]
@@ -644,21 +644,21 @@ stalj@uek.krakow.pl
    arr = [2,4,6,7,9,5]
    ```
 
-1. Write a program that checks whether the first array is a subset of the second one (whether all elements of the first array appear in the second array).
+1. Napisz program, który sprawdza, czy pierwsza tablica jest podzbiorem drugiej (czy wszystkie elementy pierwszej tablicy występują w drugiej tablicy).
 
-1. Define a function rand_elem(array) that returns a randomly selected array element. Using the function, print a few randomly selected array elements.
+1. Zdefiniuj funkcję rand_elem(array), która zwraca losowo wybrany element tablicy. Używając tej funkcji, wypisz kilka losowo wybranych elementów tablicy.
 
-1. A variable contains text:
+1. Zmienna zawiera tekst:
 
    An apple a day keeps the doctor away
 
-   Create a module MyText, containing:
+   Stwórz moduł MyText, zawierający:
 
-   1. A function that returns the number of words in the text
-   1. A function that returns an ordered array of words, from longest to shortest
-   1. A function that returns an alphabetically ordered array of words
+   1. Funkcję, która zwraca liczbę słów w tekście
+   1. Funkcję, która zwraca uporządkowaną tablicę słów, od najdłuższego do najkrótszego
+   1. Funkcję, która zwraca tablicę słów uporządkowaną alfabetycznie
 
-   Then, write a program, call the functions and print results. Sample result:
+   Następnie napisz program, wywołaj funkcje i wypisz wyniki. Przykładowy wynik:
 
    ```
    Text: An apple a day keeps the doctor away
@@ -667,13 +667,13 @@ stalj@uek.krakow.pl
    Words ordered alphabetically: a,An,apple,away,…
    ```
 
-1. Familiarise yourself with methods of visualizing data:
+1. Zapoznaj się z metodami wizualizacji danych:
 
    <https://www.w3schools.com/python/matplotlib_intro.asp> 
 
-   Then, using ‘matplotlib’, draw a line in a diagram from position (1, 3) to position (8, 10). 
+   Następnie, używając ‘matplotlib’, narysuj na wykresie linię od pozycji (1, 3) do pozycji (8, 10). 
 
-   > Hint: to use 'matplotlib' in your programs, first you have to install the module by using the 'pip' command (python package manager).
+   > Wskazówka: aby używać 'matplotlib' w swoich programach, musisz najpierw zainstalować moduł używając polecenia 'pip' (menedżer pakietów python).
 
    <https://pythonguides.com/how-to-install-matplotlib-python/>
 
@@ -686,7 +686,7 @@ stalj@uek.krakow.pl
    ```
    
 
-1. Write a program that draws the graph of the function f(x)=x<sup>2</sup>-3. Sample result:
+1. Napisz program, który rysuje wykres funkcji f(x)=x<sup>2</sup>-3. Przykładowy wynik:
 
    ```python
    import matplotlib.pyplot as plt
@@ -705,12 +705,13 @@ stalj@uek.krakow.pl
    # print chart
    ...
    ...
+   ```
 
-1. Write a program that draws the function y = sin(x) for an angle value in the range 0-360 degrees.
+1. Napisz program, który rysuje funkcję y = sin(x) dla wartości kąta w zakresie 0-360 stopni.
 
-1. A two-dimensional array of size 2 by 4 contains integer numbers. Create a program that prints array values in rows and columns.
+1. Dwuwymiarowa tablica o rozmiarze 2 na 4 zawiera liczby całkowite. Stwórz program, który wypisuje wartości tablicy w wierszach i kolumnach.
 
-1. A two-dimensional array contains the following numbers:
+1. Dwuwymiarowa tablica zawiera następujące liczby:
 
    ```
    7 3 7 9 0
@@ -719,17 +720,17 @@ stalj@uek.krakow.pl
    8 7 1 1 5
    ```
 
-   Create a program that calculates the sum of values in the last column.
+   Stwórz program, który oblicza sumę wartości w ostatniej kolumnie.
 
-1. A function create_2d_arr(x,y) creates and returns two dimensional array with values of 0. Create a program and the function. Then create a two-dimensional array with dimensions of 3 by 5. print the created array.
+1. Funkcja create_2d_arr(x,y) tworzy i zwraca dwuwymiarową tablicę o wartościach 0. Stwórz program i tę funkcję. Następnie stwórz dwuwymiarową tablicę o wymiarach 3 na 5. Wypisz stworzoną tablicę.
 
-1. An array contains values:
+1. Tablica zawiera wartości:
 
    ```
    [[0,0,0,0,0],0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]] 
    ```
    
-   Create a program that modifies the array values to create a multiplication table as below. Use loop statements. Print the array.
+   Stwórz program, który modyfikuje wartości tablicy, aby stworzyć tabliczkę mnożenia jak poniżej. Użyj instrukcji pętli. Wypisz tablicę.
 
    ```
    1  2  3  4  5
@@ -739,30 +740,30 @@ stalj@uek.krakow.pl
    5 10 15 20 25
    ```
    
-1. An array contains integer numbers:
+1. Tablica zawiera liczby całkowite:
 
    ```
    [[-38, 19], [5,40],[-7,11],[29,16]]
    ```
 
-   Create a program that finds the smallest and largest values in the array and in which row and column they are located. 
+   Stwórz program, który znajduje najmniejszą i największą wartość w tablicy oraz w którym wierszu i kolumnie się one znajdują. 
 
-1. A two-dimensional array of the size 3 by 5 contains integer numbers. Create a program that swaps the first and the last row. Print array values in rows and columns before and after changes.
+1. Dwuwymiarowa tablica o rozmiarze 3 na 5 zawiera liczby całkowite. Stwórz program, który zamienia miejscami pierwszy i ostatni wiersz. Wypisz wartości tablicy w wierszach i kolumnach przed i po zmianach.
 
-1. A two-dimensional array of the size 3 by 5 contains integer numbers. Create a program that swaps the first and the last column. Print array values in rows and columns before and after changes.
+1. Dwuwymiarowa tablica o rozmiarze 3 na 5 zawiera liczby całkowite. Stwórz program, który zamienia miejscami pierwszą i ostatnią kolumnę. Wypisz wartości tablicy w wierszach i kolumnach przed i po zmianach.
 
-1. In mathematics, a matrix is a rectangular array or table of numbers, symbols, or expressions, arranged in rows and columns, e.g.:
+1. W matematyce macierz to prostokątna tablica liczb, symboli lub wyrażeń, ułożonych w wierszach i kolumnach, np.:
 
    ```
    -7  12 38
    41 -19 11
    ```
 
-   Create a function identity_matrix(n) that returns an identity matrix(2D array) of size n.
+   Stwórz funkcję identity_matrix(n), która zwraca macierz jednostkową (tablicę 2D) o rozmiarze n.
    
    <https://en.wikipedia.org/wiki/Identity_matrix>
    
-   Then, create a function that prints a 2D array in rows and columns. Finally, create a program that prints three identity matrices with dimensions of 3, 5 and 8. Sample result:
+   Następnie stwórz funkcję, która wypisuje tablicę 2D w wierszach i kolumnach. Na koniec stwórz program, który wypisuje trzy macierze jednostkowe o wymiarach 3, 5 i 8. Przykładowy wynik:
 
    ```
    1 0 0 0 0
@@ -772,18 +773,18 @@ stalj@uek.krakow.pl
    0 0 0 0 1
    ```
 
-1. Create a function transpose_matrix(m) that returns transposed matrix m:
+1. Stwórz funkcję transpose_matrix(m), która zwraca transponowaną macierz m:
 
    <https://en.wikipedia.org/wiki/Transpose> 
 
-   Then, create a program that prints transposed matrices, in rows and columns, for the following matrices.
+   Następnie stwórz program, który wypisuje transponowane macierze, w wierszach i kolumnach, dla następujących macierzy.
    1. 1 2 3\
       4 5 6\
       7 8 9
    1. 1 2 3 4 5\
       6 7 8 9 0
    1. 5 6 7 8
-1. Create a function that convert two-dimensional (2D) array into 1D. Then create a program that prints 1D array for the following 2D arrays.
+1. Stwórz funkcję, która konwertuje tablicę dwuwymiarową (2D) na jednowymiarową (1D). Następnie stwórz program, który wypisuje tablicę 1D dla następujących tablic 2D.
 
    1. 2 3\
       1 5 
@@ -793,5 +794,3 @@ stalj@uek.krakow.pl
       3 5\
       7 4\
       2 6
-
-
