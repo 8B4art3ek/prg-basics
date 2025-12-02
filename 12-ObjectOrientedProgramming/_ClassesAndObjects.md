@@ -47,7 +47,7 @@
 
    <https://youtu.be/f0TrMH9s-VE?feature=shared>
 
-## Class and Object Creation
+## 1. Class and Object Creation
 
 1. The file student.py contains the definition of a class that contains attributes describing a student. Modify the class by adding a third attribute. Then make changes to the program by adding a third student. Assign values ​​of all available attributes to all students. Finally, print information about all students.
 
@@ -89,7 +89,7 @@
          ...
    ```
 
-## String Representation of Object
+## 2. String Representation of Object
 
 1. In Python, `__str__()` is a special method that is used to define how an object should be represented as a string. This method is called when you use the `str()` function or `print()` function on an instance of a class. It allows you to control the human-readable string representation of your objects.
 
@@ -152,7 +152,7 @@
    ...
    ```
 
-## Class with Multiple Components
+## 3. Class with Multiple Components
 
 1. In a `tv.py` file create a TV class that describes a TV set. The class should contain one boolean attribute called `is_on` that specifies whether the TV set is turned on. Initially, the TV is turned off. Add `turn_on()` and `turn_off()` methods in the class to turn the TV on and off, respectively. Also, add a `show_status()` method to print whether the TV is on or off. Then, in a tv_show.py, write a main program, in which try to create and use the TV set. Sample message:
 
@@ -252,7 +252,7 @@
 
 1. In the TV class, add support for volume adjustment in the range 0 to 10. The initial value of the volume level is 0. Add two methods to increase and decrease the TV volume level by one. Note that you cannot increase or decrease the volume beyond the specified range. Display the current volume level in the `show_status()` method. Then check the operation of the TV by adjusting and displaying its volume level.
 
-## Practice Makes Perfect
+## 4. Practice Makes Perfect
 
 1. From the course textbook, read chapter dealing with Object-Oriented Programming.
 
