@@ -1,21 +1,21 @@
-﻿# CLASSES AND OBJECTS
+﻿# KLASY I OBIEKTY (CLASSES AND OBJECTS)
 
-1. Object-Oriented Programming (OOP) is a programming paradigm that is based on the concept of "objects." In OOP, software is designed by defining objects, which represent real-world entities. These objects can contain both data (attributes or properties) and methods (functions or behaviors) that operate on the data. The main goal of OOP is to make program code more modular, reusable, and easier to maintain.
+1. Programowanie obiektowe (OOP - Object-Oriented Programming) to paradygmat programowania oparty na koncepcji "obiektów". W OOP oprogramowanie jest projektowane poprzez definiowanie obiektów, które reprezentują byty ze świata rzeczywistego. Obiekty te mogą zawierać zarówno dane (atrybuty lub właściwości), jak i metody (funkcje lub zachowania), które operują na tych danych. Głównym celem OOP jest uczynienie kodu programu bardziej modularnym, wielokrotnego użytku i łatwiejszym w utrzymaniu.
 
-   Watch the video (from the beginning to 3:42) on explaining the concepts of object, class and virtualization.
+   Obejrzyj film (od początku do 3:42) wyjaśniający koncepcje obiektu, klasy i wirtualizacji.
 
    <https://youtu.be/m_MQYyJpIjg?feature=shared>
 
-1. In Python, a class is a construct that allows you to define custom data types. It is a fundamental concept of Object-Oriented Programming, enabling the creation of objects that bundle data (`attributes`) and behaviors (`methods`) together.
+1. W Pythonie klasa to konstrukcja, która pozwala definiować własne typy danych. Jest to fundamentalna koncepcja programowania obiektowego, umożliwiająca tworzenie obiektów, które łączą dane (`atrybuty`) i zachowania (`metody`).
 
-   **Features of a Class:**
+   **Cechy klasy:**
 
-   * **Attributes**: Variables that store data related to an object. These can represent the state of an object, such as name, age, price, etc.
-   * **Methods**: Functions defined inside a class that operate on objects of that class. Methods can modify the state of an object, retrieve information, or perform specific actions.
+   * **Atrybuty**: Zmienne przechowujące dane związane z obiektem. Mogą reprezentować stan obiektu, taki jak nazwa, wiek, cena itp.
+   * **Metody**: Funkcje zdefiniowane wewnątrz klasy, które operują na obiektach tej klasy. Metody mogą modyfikować stan obiektu, pobierać informacje lub wykonywać określone działania.
 
-   **Defining a Class:**
+   **Definiowanie klasy:**
 
-   To define a class in Python, we use the class keyword. Example:
+   Aby zdefiniować klasę w Pythonie, używamy słowa kluczowego `class`. Przykład:
 
    ```python
    class Car:
@@ -28,30 +28,30 @@
         print(f"Car: {self.brand} {self.model}, Year: {self.year}")
    ```
 
-   **In the example above:**
+   **W powyższym przykładzie:**
 
-   * **Car** is a class that describes cars.
-   * **Constructor** `__init__()` is a special method called when a new object is created. It initializes the object and assigns values to the object's attributes.
-   * `display_info` is a method that prints out the car's information.
+   * **Car** to klasa opisująca samochody.
+   * **Konstruktor** `__init__()` to specjalna metoda wywoływana przy tworzeniu nowego obiektu. Inicjalizuje ona obiekt i przypisuje wartości do atrybutów obiektu.
+   * `display_info` to metoda, która wypisuje informacje o samochodzie.
 
-   **Creating an Object:**
+   **Tworzenie obiektu:**
 
-   An object is an instance of a class, which means a specific example described by the class. We create an object by calling the class as if it were a function.
+   Obiekt jest instancją klasy, co oznacza konkretny egzemplarz opisany przez klasę. Tworzymy obiekt, wywołując klasę tak, jakby była funkcją.
 
    ```python
    my_car = Car("Toyota", "Corolla", 2021)  # Creating an object of the Car class
    my_car.display_info()  # Calling a method on the object
    ```
 
-1. Learn on how to use classes and objects in Python:
+1. Dowiedz się, jak używać klas i obiektów w Pythonie:
 
    <https://youtu.be/f0TrMH9s-VE?feature=shared>
 
-## 1. Class and Object Creation
+## 1. Tworzenie Klas i Obiektów
 
-1. The file student.py contains the definition of a class that contains attributes describing a student. Modify the class by adding a third attribute. Then make changes to the program by adding a third student. Assign values ​​of all available attributes to all students. Finally, print information about all students.
+1. Plik `student.py` zawiera definicję klasy, która posiada atrybuty opisujące studenta. Zmodyfikuj klasę, dodając trzeci atrybut. Następnie wprowadź zmiany w programie, dodając trzeciego studenta. Przypisz wartości wszystkich dostępnych atrybutów dla wszystkich studentów. Na koniec wypisz informacje o wszystkich studentach.
 
-1. The Square class represents objects describing a geometric figure (square). Complete the class by adding a method to calculate the perimeter of a square. Then write a program that creates two squares with sides of 4 and 6, respectively. Calculate the areas and perimeters of these squares. Print the results.
+1. Klasa `Square` reprezentuje obiekty opisujące figurę geometryczną (kwadrat). Uzupełnij klasę, dodając metodę do obliczania obwodu kwadratu. Następnie napisz program, który tworzy dwa kwadraty o bokach odpowiednio 4 i 6. Oblicz pola i obwody tych kwadratów. Wypisz wyniki.
 
    ```python
    class Square:
@@ -70,17 +70,17 @@
    ...
    ```
 
-1. The file `taxi.py` contains the definition of a class describing taxi rides. Complete the class by adding a method `print_receipt(self)` that prints receipt. It should contain all the information about the ride: distance, rate, and fare. Then write a program in which you create two objects representing two different taxi rides. Calculate the fares for the two rides and print receipts.
+1. Plik `taxi.py` zawiera definicję klasy opisującej przejazdy taksówką. Uzupełnij klasę, dodając metodę `print_receipt(self)`, która drukuje paragon. Powinna ona zawierać wszystkie informacje o przejeździe: dystans, stawkę i opłatę. Następnie napisz program, w którym stworzysz dwa obiekty reprezentujące dwa różne przejazdy taksówką. Oblicz opłaty za oba przejazdy i wydrukuj paragony.
 
-1. A class contained in the `socialmedia.py` models a social media profile, allowing users to add posts and display their timeline. Add a `display_timeline(self)` method to the class that prints the user's name along with a list of posts. Number the list items. Then write a program that creates a user 'johndoe'. Add the following posts. Print the user's name and posts.
+1. Klasa zawarta w `socialmedia.py` modeluje profil w mediach społecznościowych, pozwalając użytkownikom dodawać posty i wyświetlać ich oś czasu. Dodaj do klasy metodę `display_timeline(self)`, która wypisuje imię użytkownika wraz z listą postów. Ponumeruj elementy listy. Następnie napisz program, który tworzy użytkownika 'johndoe'. Dodaj następujące posty. Wypisz imię użytkownika i posty.
 
    * Hello, world! 
    * Had a great day at the park!
    * What's up, Natalie? How are you?
 
-1. The `Book` class, available in the `book.py` file, contains a collection of attributes and methods describing a book. Make changes so that the class also includes information about the book's price, which can be specified when it is created (specify a price of `48`). Print the price information along with other printed data.
+1. Klasa `Book`, dostępna w pliku `book.py`, zawiera zbiór atrybutów i metod opisujących książkę. Wprowadź zmiany tak, aby klasa zawierała również informację o cenie książki, którą można podać przy jej tworzeniu (ustal cenę na `48`). Wypisz informację o cenie wraz z innymi drukowanymi danymi.
 
-1. Identify at least 3 states and 3 behaviors for your smartphone. Then, for the listed states and behaviors, create a class with attributes and methods. Try to use verbs in method names as they describe activities. Finally, create a smartphone object, call its methods and display object’s properties.
+1. Zidentyfikuj co najmniej 3 stany i 3 zachowania dla swojego smartfona. Następnie, dla wymienionych stanów i zachowań, stwórz klasę z atrybutami i metodami. Postaraj się używać czasowników w nazwach metod, ponieważ opisują one czynności. Na koniec stwórz obiekt smartfona, wywołaj jego metody i wyświetl właściwości obiektu.
 
    ```python
       class Phone():
@@ -89,11 +89,11 @@
          ...
    ```
 
-## 2. String Representation of Object
+## 2. Reprezentacja Tekstowa Obiektu (String Representation)
 
-1. In Python, `__str__()` is a special method that is used to define how an object should be represented as a string. This method is called when you use the `str()` function or `print()` function on an instance of a class. It allows you to control the human-readable string representation of your objects.
+1. W Pythonie `__str__()` to specjalna metoda używana do zdefiniowania, jak obiekt powinien być reprezentowany jako ciąg znaków (string). Ta metoda jest wywoływana, gdy używasz funkcji `str()` lub `print()` na instancji klasy. Pozwala to kontrolować czytelną dla człowieka reprezentację tekstową Twoich obiektów.
 
-   The `__str__()` method should return a string that is a readable or meaningful representation of the object. It is mainly used for displaying the object to users. When you pass the object to `str()` or `print()`, Python internally calls `__str__()` to get a string representation of the object. Look at the example below. Then run this program.
+   Metoda `__str__()` powinna zwracać ciąg znaków, który jest czytelną lub znaczącą reprezentacją obiektu. Jest używana głównie do wyświetlania obiektu użytkownikom. Kiedy przekazujesz obiekt do `str()` lub `print()`, Python wewnętrznie wywołuje `__str__()`, aby uzyskać tekstową reprezentację obiektu. Spójrz na poniższy przykład. Następnie uruchom ten program.
 
    ```python
    class Car:
@@ -112,11 +112,11 @@
    print(my_car)  # Output: 2021 Toyota Corolla
    ```
 
-   You can also find additional information about the `__str__` method on the Internet:
+   Dodatkowe informacje na temat metody `__str__` możesz znaleźć w Internecie:
 
    <https://www.pythontutorial.net/python-oop/python-__str__/>
 
-1. Create a class that represents pieces of music. Define a class constructor that allows you to set the initial values of the music piece (artist, track title, album, year) when the object is created. Complete the class with the `__str__` method returning the song data as a string, in the format as below (4 lines). Then, create two objects that represent two pieces of music and print their data. Sample result:
+1. Stwórz klasę reprezentującą utwory muzyczne. Zdefiniuj konstruktor klasy, który pozwala ustawić początkowe wartości utworu (wykonawca, tytuł utworu, album, rok) podczas tworzenia obiektu. Uzupełnij klasę o metodę `__str__` zwracającą dane utworu jako ciąg znaków, w formacie jak poniżej (4 linie). Następnie stwórz dwa obiekty reprezentujące dwa utwory muzyczne i wypisz ich dane. Przykładowy wynik:
 
    ```
    Performer: Ed Sheeran
@@ -152,22 +152,22 @@
    ...
    ```
 
-## 3. Class with Multiple Components
+## 3. Klasa z Wieloma Komponentami
 
-1. In a `tv.py` file create a TV class that describes a TV set. The class should contain one boolean attribute called `is_on` that specifies whether the TV set is turned on. Initially, the TV is turned off. Add `turn_on()` and `turn_off()` methods in the class to turn the TV on and off, respectively. Also, add a `show_status()` method to print whether the TV is on or off. Then, in a tv_show.py, write a main program, in which try to create and use the TV set. Sample message:
+1. W pliku `tv.py` stwórz klasę TV, która opisuje telewizor. Klasa powinna zawierać jeden atrybut logiczny (boolean) o nazwie `is_on`, który określa, czy telewizor jest włączony. Początkowo telewizor jest wyłączony. Dodaj do klasy metody `turn_on()` i `turn_off()`, aby odpowiednio włączać i wyłączać telewizor. Dodaj także metodę `show_status()`, aby wypisać, czy telewizor jest włączony, czy wyłączony. Następnie w pliku `tv_show.py` napisz program główny, w którym spróbujesz stworzyć i użyć telewizora. Przykładowy komunikat:
 
    ```
    TV is on
    ```
 
-   Then, try using the TV set in the program:
+   Następnie spróbuj użyć telewizora w programie:
 
-   1. Create TV set
-   1. Show TV status
-   1. Turn TV on
-   1. Show TV status
-   1. Turn TV off
-   1. Show TV status
+   1. Stwórz telewizor
+   1. Pokaż status telewizora
+   1. Włącz telewizor
+   1. Pokaż status telewizora
+   1. Wyłącz telewizor
+   1. Pokaż status telewizora
 
    ```python
    # tv.py file
@@ -198,27 +198,27 @@
       main() 
    ```
 
-1. In the TV class, add the `channel_no` attribute indicating the number of the current TV channel displayed by the TV set. Initially, the TV is set to channel 1. Modify the `show_status()` method so that it also prints the TV channel number, but only if the TV is turned on:
+1. W klasie TV dodaj atrybut `channel_no` wskazujący numer aktualnego kanału wyświetlanego przez telewizor. Początkowo telewizor jest ustawiony na kanał 1. Zmodyfikuj metodę `show_status()` tak, aby wypisywała również numer kanału, ale tylko wtedy, gdy telewizor jest włączony:
 
    ```
    TV is on, channel 1
    TV is off
    ```
 
-   Then, try using the TV set. Print TV status both when switched on and off. See if the channel number is printed only when the TV is switched on.
+   Następnie spróbuj użyć telewizora. Wypisz status telewizora zarówno po włączeniu, jak i wyłączeniu. Sprawdź, czy numer kanału jest wypisywany tylko wtedy, gdy telewizor jest włączony.
 
-1. Add the `set_channel(new_channel_no)` method in the TV class to set the TV channel number. Then try using the TV set.
+1. Dodaj metodę `set_channel(new_channel_no)` w klasie TV, aby ustawić numer kanału telewizora. Następnie spróbuj użyć telewizora.
 
-   1. Create a TV set
-   1. Show TV status
-   1. Turn TV on
-   1. Show TV status
-   1. Change TV channel to 5
-   1. Show TV status
-   1. Turn TV off
-   1. Show TV status 
+   1. Stwórz telewizor
+   1. Pokaż status telewizora
+   1. Włącz telewizor
+   1. Pokaż status telewizora
+   1. Zmień kanał na 5
+   1. Pokaż status telewizora
+   1. Wyłącz telewizor
+   1. Pokaż status telewizora 
 
-1. In the TV class, add the channels attribute containing a list of available TV channel names (use an array). Initially, the array should be empty (TV not programmed, no available channels). Add `set_channels(channels_list)` and `show_channels()` methods in the TV class, which allows you to set channels on the TV and print the list of available channels. Sample list of available channels:
+1. W klasie TV dodaj atrybut `channels` zawierający listę nazw dostępnych kanałów TV (użyj tablicy/listy). Początkowo tablica powinna być pusta (telewizor niezaprogramowany, brak dostępnych kanałów). Dodaj metody `set_channels(channels_list)` i `show_channels()` w klasie TV, które pozwalają ustawić kanały w telewizorze i wypisać listę dostępnych kanałów. Przykładowa lista dostępnych kanałów:
 
    ```
    Channel list:
@@ -230,133 +230,133 @@
    6. Discovery
    ```
 
-   Then, try using the TV set:
+   Następnie spróbuj użyć telewizora:
 
-   1. Create a TV set
-   1. Show TV status
-   1. Turn TV on
-   1. Show TV status
-   1. Display the list of available channels
-   1. Set TV channels: TVP1, TVP2, Polsat, TVN, Filmbox, Discovery
-   1. Display the list of available channels
-   1. Show TV status
-   1. Turn TV offs
+   1. Stwórz telewizor
+   1. Pokaż status telewizora
+   1. Włącz telewizor
+   1. Pokaż status telewizora
+   1. Wyświetl listę dostępnych kanałów
+   1. Ustaw kanały TV: TVP1, TVP2, Polsat, TVN, Filmbox, Discovery
+   1. Wyświetl listę dostępnych kanałów
+   1. Pokaż status telewizora
+   1. Wyłącz telewizor
 
-1. In the TV class, make changes to the `show_status()` method so that it prints not only the selected channel number but also its name. When the selected channel number exceeds the list of available channels, the channel name is not displayed.
+1. W klasie TV wprowadź zmiany w metodzie `show_status()` tak, aby wypisywała nie tylko wybrany numer kanału, ale także jego nazwę. Gdy wybrany numer kanału przekracza listę dostępnych kanałów, nazwa kanału nie jest wyświetlana.
 
    ```
    TV is on, channel 4 (TVN)
    ```
 
-   Then, try using the TV. Set at least 7 channels (seven TV stations), change channel numbers a number of times and print TV status every time.
+   Następnie spróbuj użyć telewizora. Ustaw co najmniej 7 kanałów (siedem stacji TV), zmień numery kanałów kilka razy i za każdym razem wypisz status telewizora.
 
-1. In the TV class, add support for volume adjustment in the range 0 to 10. The initial value of the volume level is 0. Add two methods to increase and decrease the TV volume level by one. Note that you cannot increase or decrease the volume beyond the specified range. Display the current volume level in the `show_status()` method. Then check the operation of the TV by adjusting and displaying its volume level.
+1. W klasie TV dodaj obsługę regulacji głośności w zakresie od 0 do 10. Początkowa wartość poziomu głośności wynosi 0. Dodaj dwie metody, aby zwiększyć i zmniejszyć poziom głośności telewizora o jeden. Zwróć uwagę, że nie można zwiększyć ani zmniejszyć głośności poza określony zakres. Wyświetl aktualny poziom głośności w metodzie `show_status()`. Następnie sprawdź działanie telewizora, regulując i wyświetlając jego poziom głośności.
 
-## 4. Practice Makes Perfect
+## 4. Trening czyni mistrza (Practice Makes Perfect)
 
-1. From the course textbook, read chapter dealing with Object-Oriented Programming.
+1. Przeczytaj rozdział w podręczniku kursu, który dotyczy Programowania Obiektowego (Object-Oriented Programming).
 
-1. Watch the video on how Python classes are defined:
+1. Obejrzyj film o tym, jak definiowane są klasy w Pythonie:
 
    <https://youtu.be/apACNr7DC_s?feature=shared>
 
-1. Familiarise yourself with tutorials available on w3schools which deals with class creation and their components (fields and methods).
+1. Zapoznaj się z tutorialami dostępnymi na w3schools, które dotyczą tworzenia klas i ich komponentów (pól i metod).
 
    <https://www.w3schools.com/python/python_classes.asp>
 
-1. E-book is a digital book that can be read using a computer or other electronic devices (electronic book readers). Write a program in which define a class that describes states and behaviors of an  e-book. Each book has a title, author, number of pages and the current page number that is currently being read. It is possible to open a book - then we can read it. If a book is open, it is possible to go to the next or previous page.
+1. E-book to cyfrowa książka, którą można czytać za pomocą komputera lub innych urządzeń elektronicznych (czytników e-booków). Napisz program, w którym zdefiniujesz klasę opisującą stany i zachowania e-booka. Każda książka ma tytuł, autora, liczbę stron i numer bieżącej strony, która jest aktualnie czytana. Możliwe jest otwarcie książki - wtedy możemy ją czytać. Jeśli książka jest otwarta, możliwe jest przejście do następnej lub poprzedniej strony.
 
-   Place the class describing e-books in a separate file/module. In the main program file, try using the e-book:
+   Umieść klasę opisującą e-booki w osobnym pliku/module. W głównym pliku programu spróbuj użyć e-booka:
 
-   1. Create a book with a title, author, number of pages (check how to set the initial values of the fields at the time of creating the object using the `__init__` method / constructor and passing the initial values as arguments to the method call)
-   1. Open a book
-   1. Display a book status (title, author, page numbers, current page no)
-   1. Read a few pages
-   1. Display a book status
-   1. Close a book
-   1. Read a few pages (it should not be possible to perform this operation - display the message that the book is closed).
+   1. Stwórz książkę z tytułem, autorem, liczbą stron (sprawdź, jak ustawić początkowe wartości pól w momencie tworzenia obiektu używając metody `__init__` / konstruktora i przekazując początkowe wartości jako argumenty wywołania metody)
+   1. Otwórz książkę
+   1. Wyświetl status książki (tytuł, autor, liczba stron, numer bieżącej strony)
+   1. Przeczytaj kilka stron
+   1. Wyświetl status książki
+   1. Zamknij książkę
+   1. Przeczytaj kilka stron (wykonanie tej operacji nie powinno być możliwe - wyświetl komunikat, że książka jest zamknięta).
 
-1. The medical thermometer measures the patient's temperature in the range from 34.0 to 42.0 degrees Celsius, with an accuracy of 0.1 degrees. Write a program in which define a class that describes the states and behaviors of the thermometer. The thermometer should enable temperature measurement (do it by generating a random number from the 34.0 to 42.0 range) and display the measured value. If the temperature is at least 37 degrees Celsius, the thermometer should additionally display the 'Fever' message, e.g.
+1. Termometr medyczny mierzy temperaturę pacjenta w zakresie od 34.0 do 42.0 stopni Celsjusza, z dokładnością do 0.1 stopnia. Napisz program, w którym zdefiniujesz klasę opisującą stany i zachowania termometru. Termometr powinien umożliwiać pomiar temperatury (zrób to, generując losową liczbę z zakresu 34.0 do 42.0) i wyświetlać zmierzoną wartość. Jeśli temperatura wynosi co najmniej 37 stopni Celsjusza, termometr powinien dodatkowo wyświetlić komunikat 'Gorączka' (Fever), np.
 
    ```
    Temperature: 37.2C (fever)
    ```
 
-   When the temperature is at least 41.0, the thermometer should additionally print the message 'CRITICAL TEMPERATURE!!'. Place the class definition and the main program in separate files. Then use the program and:
+   Gdy temperatura wynosi co najmniej 41.0, termometr powinien dodatkowo wypisać komunikat 'TEMPERATURA KRYTYCZNA!!' (CRITICAL TEMPERATURE!!). Umieść definicję klasy i program główny w osobnych plikach. Następnie użyj programu i:
 
-   1. Create a thermometer
-   1. Turn thermometer on
-   1. Measure temperature
-   1. Display temperature
-   1. Turn thermometer off
+   1. Stwórz termometr
+   1. Włącz termometr
+   1. Zmierz temperaturę
+   1. Wyświetl temperaturę
+   1. Wyłącz termometr
 
-1. The bank account has a 26-digit number assigned when creating an account. The initial account balance is PLN 0. You can deposit any amount on the account. You can also withdraw any amount from the account, provided that it does not exceed the account balance. If you try to withdraw a larger amount, the following message will be displayed: "Insufficient funds on the account". At any time, it is possible to display information about the number and balance of the bank account in the following format:
+1. Konto bankowe posiada 26-cyfrowy numer przypisany podczas tworzenia konta. Początkowe saldo konta wynosi 0 PLN. Możesz wpłacić dowolną kwotę na konto. Możesz również wypłacić dowolną kwotę z konta, pod warunkiem, że nie przekracza ona salda konta. Jeśli spróbujesz wypłacić większą kwotę, wyświetlony zostanie komunikat: "Niewystarczające środki na koncie". W dowolnym momencie możliwe jest wyświetlenie informacji o numerze i saldzie konta bankowego w następującym formacie:
 
    ```
    Bank Account No: 11 1111 1111 1111 1111 1111 1111
    Balance: PLN 25,38
    ```
 
-   Create a program that handles the bank account.
+   Stwórz program obsługujący konto bankowe.
 
-   1. Familiarises yourself with a problem.
-   1. Identify an object
-   1. Define the states and behaviors of the object.
-   1. Transform the states and behaviors of the object into the fields and methods of the class that will serve as a pattern for creating an object.
-   1. Create a sketch of the class without creating any method content.
-   1. Create the content of each method.
+   1. Zapoznaj się z problemem.
+   1. Zidentyfikuj obiekt.
+   1. Zdefiniuj stany i zachowania obiektu.
+   1. Przekształć stany i zachowania obiektu w pola i metody klasy, która posłuży jako wzorzec do tworzenia obiektu.
+   1. Stwórz szkic klasy bez tworzenia treści metod.
+   1. Stwórz treść każdej metody.
 
-   Then, use the program and:
+   Następnie użyj programu i:
 
-   1. Create a bank account with the number 12 3456 5555 9090 1111 0000 7722
-   1. Display account balance
-   1. Deposit PLN 25,30
-   1. Display account balance
-   1. Withdraw PLN 31,70
-   1. Display account balance
-   1. Withdraw PLN 14
-   1. Display account balance
+   1. Stwórz konto bankowe o numerze 12 3456 5555 9090 1111 0000 7722
+   1. Wyświetl saldo konta
+   1. Wpłać 25,30 PLN
+   1. Wyświetl saldo konta
+   1. Wypłać 31,70 PLN
+   1. Wyświetl saldo konta
+   1. Wypłać 14 PLN
+   1. Wyświetl saldo konta
 
-1. Write a program containing a Statistics class that describes the properties of any set of numbers. The class should allow to:
+1. Napisz program zawierający klasę Statistics, która opisuje właściwości dowolnego zbioru liczb. Klasa powinna umożliwiać:
 
-   1. Add to the set of numbers, the next number read from the keyboard (store the numbers in the array)
-   1. Display all numbers separated by a space
-   1. Determine the greatest number
-   1. Determine the smallest number
-   1. Calculate the arithmetic mean of numbers
-   1. Calculate of the median
-   1. Print of calculated / determined statistical quantities (minimum, maximum, arithmetic mean, median)
+   1. Dodanie do zbioru liczb kolejnej liczby wczytanej z klawiatury (przechowuj liczby w tablicy)
+   1. Wyświetlenie wszystkich liczb oddzielonych spacją
+   1. Wyznaczenie największej liczby
+   1. Wyznaczenie najmniejszej liczby
+   1. Obliczenie średniej arytmetycznej liczb
+   1. Obliczenie mediany
+   1. Wypisanie obliczonych / wyznaczonych wielkości statystycznych (minimum, maksimum, średnia arytmetyczna, mediana)
 
-   Then, use the program for numbers below to calculate and print the basic staticstics:
+   Następnie użyj programu dla poniższych liczb, aby obliczyć i wypisać podstawowe statystyki:
 
    ```
    12, 37, 6, 9, 17 
    ```
 
-1. The `Contact` class contains the `name`, `email` and `telephone` fields enabling the description of a single contact on a smartphone. The `Contact_List` class allows you to store contacts (store objects describing contacts in an array) and perform the following operations:
+1. Klasa `Contact` zawiera pola `name`, `email` i `telephone` umożliwiające opis pojedynczego kontaktu w smartfonie. Klasa `Contact_List` pozwala przechowywać kontakty (przechowywać obiekty opisujące kontakty w tablicy) i wykonywać następujące operacje:
 
-   1. Add a new contact
-   1. Display the contact list
+   1. Dodaj nowy kontakt
+   1. Wyświetl listę kontaktów
 
-   Write a program consisting of 3 files (`smartphone.py`, `contact.py`, `contact_list.py`). In the mail program (`smartphone.py`), create an object representing a contact list and add the following people data:
+   Napisz program składający się z 3 plików (`smartphone.py`, `contact.py`, `contact_list.py`). W programie głównym (`smartphone.py`) stwórz obiekt reprezentujący listę kontaktów i dodaj dane następujących osób:
 
    ```
    John Brown     brown@onet.pl       555234000
-   Anna May   	   am@o2.pl            232000199
+   Anna May       am@o2.pl            232000199
    George Small   smallg@google.pl    222999100
    Paola Big      bigpaola@poczta.pl  100200300
    ```
 
-   Then, display the contact list available on the smartphone.
+   Następnie wyświetl listę kontaktów dostępną w smartfonie.
 
-1. An object representing an employee contains the following data: name, surname, age, and seniority (the number of years worked). Define a `C` class that allows you to create an object. Provide employee data at the time of creating the object, in the given order. Define a text representation of an object in the class that contains a string of last name, first letter of first name, and seniority. If the employee is an adult (at least 18 years old), use uppercase letters, otherwise lowercase letters. Sample result:
+1. Obiekt reprezentujący pracownika zawiera następujące dane: imię, nazwisko, wiek i staż pracy (liczba przepracowanych lat). Zdefiniuj klasę `C`, która pozwala stworzyć obiekt. Podaj dane pracownika w momencie tworzenia obiektu, w podanej kolejności. Zdefiniuj w klasie reprezentację tekstową obiektu, która zawiera ciąg składający się z nazwiska, pierwszej litery imienia i stażu pracy. Jeśli pracownik jest pełnoletni (ma co najmniej 18 lat), użyj wielkich liter, w przeciwnym razie małych. Przykładowy wynik:
 
    ```
    C("Anna","May",17,7) returns "maya7"
    C("George","Brown",21,4) returns "BROWNG4"
    ```
 
-1. An object contains a list of coordinates of points on the plane, as a two-dimensional array. Define a `C` class that allows you to create an object. Provide the list of coordinates of points at the time of creating the object. In the class `C`, define a method `m(n)` that returns true when at least `n` points are in the first quadrant of the coordinate system (both point coordinates are greater than 0), or false otherwise. Sample result:
+1. Obiekt zawiera listę współrzędnych punktów na płaszczyźnie, jako tablicę dwuwymiarową. Zdefiniuj klasę `C`, która pozwala stworzyć obiekt. Podaj listę współrzędnych punktów w momencie tworzenia obiektu. W klasie `C` zdefiniuj metodę `m(n)`, która zwraca true, gdy co najmniej `n` punktów znajduje się w pierwszej ćwiartce układu współrzędnych (obie współrzędne punktu są większe od 0), lub false w przeciwnym wypadku. Przykładowy wynik:
 
    ```
    C([[2,3],[1,8],[-6,4],[3,-7]])
@@ -364,7 +364,7 @@
    m(3) returns False
    ```
 
-1. A stadium is divided into sectors, each marked with a letter. There is a certain number of fans in each sector. Define the class `C`, which allows you to create an object representing the stadium with a list of sectors and the number of fans in sectors. Data, as a dictionary, should be transferred to the object at the time of its creation. Define in the class a `method m1(s,n)` that allows you to change the number of fans `n` in sector `s` or add a new sector `s` with the given number of fans `n`. Define in the class a method `m2(s)` that returns the sum of fans in the sectors listed in the string `s`. Sample result:
+1. Stadion jest podzielony na sektory, każdy oznaczony literą. W każdym sektorze znajduje się pewna liczba kibiców. Zdefiniuj klasę `C`, która pozwala stworzyć obiekt reprezentujący stadion z listą sektorów i liczbą kibiców w sektorach. Dane, jako słownik, powinny być przekazane do obiektu w momencie jego tworzenia. Zdefiniuj w klasie metodę `m1(s,n)`, która pozwala zmienić liczbę kibiców `n` w sektorze `s` lub dodać nowy sektor `s` z podaną liczbą kibiców `n`. Zdefiniuj w klasie metodę `m2(s)`, która zwraca sumę kibiców w sektorach wymienionych w ciągu znaków `s`. Przykładowy wynik:
 
    ```
    C({"A":120,"D":150,"G":90,"K":110})

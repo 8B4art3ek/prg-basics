@@ -5,78 +5,77 @@ Department of Informatics
 stalj@uek.krakow.pl
 -->
 
-# DICTIONARIES, STACKS AND QUEUES
+# SŁOWNIKI, STOSY I KOLEJKI (DICTIONARIES, STACKS AND QUEUES)
 
-## 1. Dictionary
+## 1. Słownik (Dictionary)
 
-1. A dictionary is a built-in data structure that stores data in key-value pairs. Each key is unique, and it maps to a specific value, allowing you to efficiently retrieve, update, and manage data. Dictionaries are mutable, meaning you can modify their content after they are created.
+1. Słownik to wbudowana struktura danych, która przechowuje dane w parach klucz-wartość. Każdy klucz jest unikalny i mapuje (wskazuje) na konkretną wartość, co pozwala na efektywne pobieranie, aktualizowanie i zarządzanie danymi. Słowniki są mutowalne (zmienne), co oznacza, że możesz modyfikować ich zawartość po utworzeniu.
 
-   Look at the dictionary below. It contains three elements, separated by commas. Each element in a dictionary consists of a key and a value, where the key acts as an identifier for accessing the associated value.
+   Spójrz na poniższy słownik. Zawiera on trzy elementy oddzielone przecinkami. Każdy element w słowniku składa się z klucza i wartości, gdzie klucz działa jak identyfikator do uzyskania dostępu do przypisanej mu wartości.
 
    ```python
    student = {'name':'John', 'age':25, 'major':'Computer Science'}
    ```
 
-1. Familiarize yourself with the basic operations you can perform on a dictionary.
+1. Zapoznaj się z podstawowymi operacjami, jakie możesz wykonywać na słowniku.
 
-
-   **Basic Dictionary Operations**
+   **Podstawowe operacje na słowniku**
 
    ```python
-   # Create a dictionary
+   # Utworzenie słownika
    student = {
       'name': 'John',
       'age': 22,
       'major': 'Computer Science'
    }
 
-   # Accessing a value
+   # Dostęp do wartości
    print(student['name'])
 
-   # Adding a new key-value pair
+   # Dodanie nowej pary klucz-wartość
    student['grade'] = 'A'
 
-   # Modifying an existing value
+   # Modyfikacja istniejącej wartości
    student['age'] = 23
 
-   # Deleting a key-value pair
+   # Usunięcie pary klucz-wartość
    del student['major']
    print(student)
    ```
 
-   **Iterating Over a Dictionary**
+   **Iterowanie przez słownik**
 
    ```python
-   # Create a dictionary
+   # Utworzenie słownika
    fruits = {'apple': 3, 'banana': 5, 'orange': 2}
 
-   # Iterating over keys
+   # Iterowanie po kluczach
    for fruit in fruits:
       print(fruit)
 
-   # Iterating over values
+   # Iterowanie po wartościach
    for count in fruits.values():
       print(count)
 
-   # Iterating over key-value pairs
+   # Iterowanie po parach klucz-wartość
    for fruit, count in fruits.items():
       print(f"The count of {fruit} is {count}")
    ```
 
-   **Checking if a Key Exists**
+   **Sprawdzanie, czy klucz istnieje**
 
    ```python
-   # Create a dictionary
+   # Utworzenie słownika
    person = {'name': 'Alice', 'age': 30}
 
-   # Check if a key exists
+   # Sprawdzenie czy klucz istnieje
    if 'name' in person:
       print("Name is present in the dictionary.")
    else:
       print("Name is not present.")
    ```
 
-1. Create a dictionary describing your mobile phone. Use 6 key-value pairs of data. Then, using `for` loop, display the contents of the dictionary. To read a key and value, use the `items()` method. Sample result:
+1. Stwórz słownik opisujący Twój telefon komórkowy. Użyj 6 par klucz-wartość. Następnie, używając pętli `for`, wyświetl zawartość słownika. Aby odczytać klucz i wartość, użyj metody `items()`. Przykładowy wynik:
 
    ```python
    mobile = {
@@ -91,7 +90,7 @@ stalj@uek.krakow.pl
       print(f"{key} : {…}")
    ```
 
-1. Create a dictionary as in the example below. Do you know what type of value was used in each of the six key-value pairs?
+1. Stwórz słownik, jak w przykładzie poniżej. Czy wiesz, jaki typ wartości został użyty w każdej z sześciu par klucz-wartość?
 
    ```python
    person = {
@@ -104,20 +103,19 @@ stalj@uek.krakow.pl
    }
    ```
 
-   Then, create a program that:
+   Następnie stwórz program, który:
 
-   1. Displays name
-   1. Displays hobby
-   1. Displays the entire contents of the dictionary
-   1. Changes surname to 'Nowak'
-   1. Changes person's marriage status
-   1. Adds gender: 'male'
-   1. Adds a new hobby: 'bicycle'
-   1. Adds work phone to existing phones: '313131444'
-   1. Displays the entire contents of the dictionary (iterate over dictionary items)
+   1. Wyświetla imię (name)
+   1. Wyświetla hobby
+   1. Wyświetla całą zawartość słownika
+   1. Zmienia nazwisko (surname) na 'Nowak'
+   1. Zmienia stan cywilny osoby (married)
+   1. Dodaje płeć (gender): 'male'
+   1. Dodaje nowe hobby: 'bicycle'
+   1. Dodaje telefon służbowy do istniejących telefonów: '313131444'
+   1. Wyświetla całą zawartość słownika (iteruj po elementach słownika)
 
-
-1. Create an array with 5 dictionaries, each containing a country and its population. Then, print the array contents. Sample result:
+1. Stwórz tablicę (listę) z 5 słownikami, z których każdy zawiera kraj i jego populację. Następnie wypisz zawartość tablicy. Przykładowy wynik:
 
    ```
    COUNTRY  POPULATION
@@ -138,7 +136,7 @@ stalj@uek.krakow.pl
    ]
    ```
 
-1. Write a program that prints details of people from the phone book whose names start with the letter 'D'.
+1. Napisz program, który wypisuje szczegóły osób z książki telefonicznej, których imiona zaczynają się na literę 'D'.
 
    ```python
    phone_book = {
@@ -169,10 +167,10 @@ stalj@uek.krakow.pl
    ...
    ```
 
-1. The following data contains information about the number of products available in a computer store. Write a program that prints:
+1. Poniższe dane zawierają informacje o liczbie produktów dostępnych w sklepie komputerowym. Napisz program, który wypisuje:
 
-   * a list of products and the quantity
-   * the total number of products in the store
+   * listę produktów i ich ilość
+   * całkowitą liczbę produktów w sklepie
 
    ```python
    {
@@ -189,13 +187,13 @@ stalj@uek.krakow.pl
    }
    ```
 
-1. The data below contains a price list of items from a clothing store along with their prices. Due to a seasonal sale, the store is reducing the price of each item by 10%. Write a program that:
+1. Poniższe dane zawierają cennik artykułów ze sklepu odzieżowego wraz z ich cenami. Z powodu sezonowej wyprzedaży sklep obniża cenę każdego artykułu o 10%. Napisz program, który:
 
-   * prints a list of products and their prices before the discount
-   * prints the total value of the products before the discount
-   * modifies the price list according to the discount (round prices to two decimal places)
-   * prints a list of products and their prices after the 10% discount
-   * prints the total value of the products after the discount
+   * wypisuje listę produktów i ich ceny przed obniżką
+   * wypisuje całkowitą wartość produktów przed obniżką
+   * modyfikuje cennik zgodnie z rabatem (zaokrąglij ceny do dwóch miejsc po przecinku)
+   * wypisuje listę produktów i ich ceny po 10% zniżce
+   * wypisuje całkowitą wartość produktów po zniżce
 
    ```python
    price_list = {
@@ -207,18 +205,18 @@ stalj@uek.krakow.pl
    }
    ```
 
-## 2. Set
+## 2. Zbiór (Set)
 
-1. A set is an unordered collection of unique elements. Sets are useful when you want to store a collection of items and ensure that there are no duplicates. Unlike lists or arrays, sets do not maintain the order of the elements, and you cannot access elements by index. They support fast membership tests, union, intersection, difference, and other set operations.
+1. Zbiór to nieuporządkowana kolekcja unikalnych elementów. Zbiory są przydatne, gdy chcesz przechowywać kolekcję przedmiotów i upewnić się, że nie ma duplikatów. W przeciwieństwie do list czy tablic, zbiory nie zachowują kolejności elementów i nie można uzyskać dostępu do elementów za pomocą indeksu. Obsługują szybkie testy przynależności, sumę, część wspólną, różnicę i inne operacje na zbiorach.
 
-   Set Operations:
-   * `&` (Intersection): Finds common elements between sets.
-   * `|` (Union): Combines all elements from both sets (removes duplicates).
-   * `-` (Difference): Finds elements present in one set but not the other.
-   * `^` (Symmetric Difference): Finds elements present in either set but not in both.
-   * `.issubset()`: Checks if one set is a subset of another.
+   Operacje na zbiorach:
+   * `&` (Intersection - Część wspólna): Znajduje wspólne elementy pomiędzy zbiorami.
+   * `|` (Union - Suma): Łączy wszystkie elementy z obu zbiorów (usuwa duplikaty).
+   * `-` (Difference - Różnica): Znajduje elementy obecne w jednym zbiorze, ale nie w drugim.
+   * `^` (Symmetric Difference - Różnica symetryczna): Znajduje elementy obecne w jednym lub drugim zbiorze, ale nie w obu jednocześnie.
+   * `.issubset()`: Sprawdza, czy jeden zbiór jest podzbiorem drugiego.
 
-1. The following program removes duplicate email addresses. Complete and run the program.
+1. Poniższy program usuwa zduplikowane adresy email. Uzupełnij i uruchom program.
 
    ```python
    emails = ["john@example.com", "jane@example.com", "john@example.com", "alex@example.com"]
@@ -226,7 +224,7 @@ stalj@uek.krakow.pl
    print(unique_emails)
    ```
 
-1. The following program identifies students who are absent. Complete and run the program.
+1. Poniższy program identyfikuje studentów, którzy są nieobecni. Uzupełnij i uruchom program.
 
    ```python
    all_students = {"Alice", "John", "Sara", "Bob"}
@@ -236,7 +234,7 @@ stalj@uek.krakow.pl
    print(absent_students)
    ```
 
-1. The program below finds spam in received emails. Complete the program that displays those received email addresses that are on the spam list.
+1. Poniższy program znajduje spam w otrzymanych wiadomościach email. Uzupełnij program, który wyświetla te otrzymane adresy email, które znajdują się na liście spamu.
 
    ```python
    emails_received = {"john@example.com", "spam1@example.com", "spam2@example.com", "jane@example.com"}
@@ -246,7 +244,7 @@ stalj@uek.krakow.pl
    print("Spam emails:", spam_emails)
    ```
 
-1. Two contact lists retrieved from a database contain email addresses. Write a program that combines these lists and simultaneously removes duplicates.
+1. Dwie listy kontaktów pobrane z bazy danych zawierają adresy email. Napisz program, który łączy te listy i jednocześnie usuwa duplikaty.
 
    ```python
    contacts_A = {"john@example.com", "alice@example.com", "bob@example.com"}
@@ -256,7 +254,7 @@ stalj@uek.krakow.pl
    print("Merged contacts:", merged_contacts)
    ```
 
-1. In an operating system, each user has some permissions. The user wants to perform some action that requires specific permissions. Write a program that checks whether the user has the required persmission.
+1. W systemie operacyjnym każdy użytkownik posiada pewne uprawnienia. Użytkownik chce wykonać pewną akcję, która wymaga określonych uprawnień. Napisz program, który sprawdza, czy użytkownik posiada wymagane uprawnienia.
 
    ```python
    required_permissions = {"read", "write", "execute"}
@@ -266,35 +264,35 @@ stalj@uek.krakow.pl
    print(has_permissions)  # Will return False because "execute" is missing.
    ```
 
-## 3. Stack
+## 3. Stos (Stack)
 
-1. A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. This means the last element added to the stack is the first one to be removed. Think of a stack as a pile of plates — the last plate you place on the top is the first one you'll take off.
+1. Stos to liniowa struktura danych, która działa zgodnie z zasadą Last In, First Out (LIFO - Ostatnie weszło, pierwsze wyszło). Oznacza to, że ostatni element dodany do stosu jest pierwszym, który zostanie usunięty. Pomyśl o stosie jak o stercie talerzy — ostatni talerz, który położysz na górze, jest pierwszym, który zdejmiesz.
 
    ![Stack Data Structure](https://media.geeksforgeeks.org/wp-content/uploads/20240606180325/What-is-Stack-(1).webp)
 
-   In the stack_example.py file you can find a simple example of how to create and manipulate a stack. Analyze and run the program. Then, modify a program in which perform the following operations:
+   W pliku `stack_example.py` możesz znaleźć prosty przykład, jak tworzyć i manipulować stosem. Przeanalizuj i uruchom program. Następnie zmodyfikuj program, w którym wykonasz następujące operacje:
    
-      1. Put 2 on the stack
-      1. Put 3 on the stack
-      1. Put 7 on the stack
-      1. Put 4 on the stack
-      1. Put 1 on the stack
-      1. Put 9 on the stack
-      1. Put 8 on the stack
-      1. Sum the last two numbers of the stack and print result
-      1. Calculate the sum of the remaining stack elements and print the result. Use a 'while' loop.
+      1. Połóż 2 na stosie
+      1. Połóż 3 na stosie
+      1. Połóż 7 na stosie
+      1. Połóż 4 na stosie
+      1. Połóż 1 na stosie
+      1. Połóż 9 na stosie
+      1. Połóż 8 na stosie
+      1. Zsumuj dwie ostatnie liczby ze stosu i wypisz wynik
+      1. Oblicz sumę pozostałych elementów stosu i wypisz wynik. Użyj pętli 'while'.
       
-1. A `back.py` program simulates the Back key in a web browser (recording the name of new website or displaying the previously visited web site). Complete the program.
+1. Program `back.py` symuluje przycisk Wstecz w przeglądarce internetowej (zapisywanie nazwy nowej strony internetowej lub wyświetlanie wcześniej odwiedzonej strony). Uzupełnij program.
 
-1. Define a function that returns true if the brackets `()`, `{}`, `[]` are used correctly in the given expression. Otherwise, the function returns false. Then write a program that checks the correctness of the expressions given below.
+1. Zdefiniuj funkcję, która zwraca true, jeśli nawiasy `()`, `{}`, `[]` są użyte poprawnie w podanym wyrażeniu. W przeciwnym razie funkcja zwraca false. Następnie napisz program, który sprawdza poprawność wyrażeń podanych poniżej.
 
-   > Use a stack. Read the next characters of the expression. Skip all but the brackets. If it is an opening bracket, put it on the stack. If it is a closing bracket, get the item from the stack and compare whether it is a matching opening bracket.
+   > Użyj stosu. Czytaj kolejne znaki wyrażenia. Pomiń wszystko oprócz nawiasów. Jeśli jest to nawias otwierający, połóż go na stosie. Jeśli jest to nawias zamykający, pobierz element ze stosu i porównaj, czy jest to pasujący nawias otwierający.
 
    ```python
    import queue
 
    expression1 = "[(2+3)*4+5]/6-{(7*8)+[4]}" # brackets ok
-   expression2 = "[(2+3]/4)"                 # brackets not correct
+   expression2 = "[(2+3]/4)"                # brackets not correct
    expression3 = "(2-3*4+(5/6)"              # brackets not correct
 
    def brackets_ok(expression):
@@ -313,7 +311,7 @@ stalj@uek.krakow.pl
    ...
    ```
 
-1. Write a program that converts any natural number to a binary number. Use the stack. To convert a number, divide the number by 2, each time taking the remainder of the division and putting the remainder on the stack. Repeat the division until the number you are dividing is zero. Then pop and display all values from the stack. Sample result for number 18:
+1. Napisz program, który konwertuje dowolną liczbę naturalną na liczbę binarną. Użyj stosu. Aby przekonwertować liczbę, dziel ją przez 2, za każdym razem biorąc resztę z dzielenia i odkładając resztę na stos. Powtarzaj dzielenie, aż liczba, którą dzielisz, wyniesie zero. Następnie zdejmij (pop) i wyświetl wszystkie wartości ze stosu. Przykładowy wynik dla liczby 18:
 
    |Division|Remainder|
    | :-: | :-: |
@@ -328,15 +326,15 @@ stalj@uek.krakow.pl
    Binary number: 10010 
    ```
 
-## 4. Queue
+## 4. Kolejka (Queue)
 
-1. A queue is a linear data structure that follows the First In, First Out (FIFO) principle. This means that the first element added to the queue will be the first one to be removed. A queue operates similarly to a real-life queue, such as a line of people waiting for a service — the person who arrives first is served first.
+1. Kolejka to liniowa struktura danych, która działa zgodnie z zasadą First In, First Out (FIFO - Pierwsze weszło, pierwsze wyszło). Oznacza to, że pierwszy element dodany do kolejki będzie pierwszym, który zostanie usunięty. Kolejka działa podobnie jak kolejka w prawdziwym życiu, np. kolejka ludzi czekających na obsługę — osoba, która przyjdzie pierwsza, jest obsługiwana jako pierwsza.
 
    ![Queue Data Structure](https://media.geeksforgeeks.org/wp-content/uploads/20240606165428/Introduction-to-Queue-(2).webp)
 
-   In the `queue_example.py` file you can find a simple example of how to create and manipulate a queue. Analyze and run the program.
+   W pliku `queue_example.py` możesz znaleźć prosty przykład, jak tworzyć i manipulować kolejką. Przeanalizuj i uruchom program.
 
-1. Using a queue, write a program that manages a queue of files to print.
+1. Używając kolejki, napisz program, który zarządza kolejką plików do wydrukowania.
 
    ```python
    import queue
@@ -370,13 +368,13 @@ stalj@uek.krakow.pl
 
 ## 5. Practice Makes Perfect
 
-1. Read the chapter in your class textbook that covers the topics in this section.
+1. Przeczytaj rozdział w swoim podręczniku, który obejmuje tematy z tej sekcji.
 
-1. Watch the video on using dictionaries in Python:
+1. Obejrzyj film o używaniu słowników w Pythonie:
 
-   <https://youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-> 
+   [https://youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-](https://youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-) 
 
-1. Write a program to translate words from English to Polish. The user enters a word in English from the keyboard. The program displays the translation of the word or information that the translation is unavailable.
+1. Napisz program do tłumaczenia słów z angielskiego na polski. Użytkownik wpisuje słowo po angielsku z klawiatury. Program wyświetla tłumaczenie słowa lub informację, że tłumaczenie jest niedostępne.
 
    ```python
    translations = {
@@ -390,7 +388,7 @@ stalj@uek.krakow.pl
    ...
    ```
 
-1. A dictionary contains course names along with the number of hours. Write a program that calculates and prints the total number of hours. Sample results:
+1. Słownik zawiera nazwy przedmiotów wraz z liczbą godzin. Napisz program, który oblicza i wypisuje całkowitą liczbę godzin. Przykładowe wyniki:
 
    ```
    The total number of hours in the winter semester is …
@@ -404,9 +402,9 @@ stalj@uek.krakow.pl
    }
    ```
 
-1. Write a program that counts how many times each word appears in a paragraph. 
+1. Napisz program, który zlicza, ile razy każde słowo występuje w akapicie.
 
-   > Hint: Check the dictionary to see if the next word appears in it. If so, increase the number of times the word appears by 1. You can easily split a paragraph into individual words using the `split()` method. Search the Internet for how to use it.
+   > Wskazówka: Sprawdź w słowniku, czy kolejne słowo w nim występuje. Jeśli tak, zwiększ liczbę wystąpień słowa o 1. Możesz łatwo podzielić akapit na pojedyncze słowa używając metody `split()`. Poszukaj w Internecie, jak jej używać.
 
    ```python
    paragraph = "cat dog mouse cat rat cat mouse"
@@ -414,7 +412,7 @@ stalj@uek.krakow.pl
    ...
    ```
 
-1. The program contains two dictionaries with personal data:
+1. Program zawiera dwa słowniki z danymi osobowymi:
 
    ```python
    basic_data = {
@@ -429,13 +427,13 @@ stalj@uek.krakow.pl
    }
    ```
 
-   Write a program that creates a dictionary called `person` containing data from the two other dictionaries (five key-value pairs). Print the contents of the ‘person’ dictionary.
+   Napisz program, który tworzy słownik o nazwie `person` zawierający dane z dwóch pozostałych słowników (pięć par klucz-wartość). Wypisz zawartość słownika ‘person’.
 
-1. A program contains two functions:
-   1. `hotel_list(hotels)` that returns a list of hotel names, separated by a comma sign
-   1. `avg_price(hotels)` that returns the average room price for a given list of hotels, rounded to an integer value
+1. Program zawiera dwie funkcje:
+   1. `hotel_list(hotels)` która zwraca listę nazw hoteli, oddzielonych przecinkiem
+   1. `avg_price(hotels)` która zwraca średnią cenę pokoju dla podanej listy hoteli, zaokrągloną do liczby całkowitej
 
-   Write a program that calculates and displays the average price for a room in hotels in Krakow and Sopot and indicates in which cities hotels are cheaper. Sample result:
+   Napisz program, który oblicza i wyświetla średnią cenę za pokój w hotelach w Krakowie i Sopocie oraz wskazuje, w których miastach hotele są tańsze. Przykładowy wynik:
 
    ```
    Hotels in Krakow: …,…,…,…
@@ -461,7 +459,7 @@ stalj@uek.krakow.pl
    ]
    ```
 
-1. Write a program to calculate the total cost of a shopping cart using a price list.
+1. Napisz program do obliczania całkowitego kosztu koszyka zakupowego przy użyciu cennika.
 
    ```python
    # Price list
@@ -475,16 +473,16 @@ stalj@uek.krakow.pl
    ...
    ```
 
-1. A traffic camera records passing vehicles. The camera saves their registration numbers in the file `vehicle.txt`. Write a program that calculates and prints how many registered cars come from each province of Poland. The list of provinces and the corresponding first letters of the vehicle registration numbers are contained in the file `province.csv`.
+1. Kamera drogowa rejestruje przejeżdżające pojazdy. Kamera zapisuje ich numery rejestracyjne w pliku `vehicle.txt`. Napisz program, który oblicza i wypisuje, ile zarejestrowanych samochodów pochodzi z każdego województwa Polski. Lista województw i odpowiadające im pierwsze litery numerów rejestracyjnych pojazdów znajdują się w pliku `province.csv`.
 
-   > Hint: use the dictionary containing the letters corresponding to the provinces and the numbers of vehicles whose first letters of the registration number match the letters of the province.
+   > Wskazówka: użyj słownika zawierającego litery odpowiadające województwom oraz liczbę pojazdów, których pierwsze litery numeru rejestracyjnego pasują do liter województwa.
 
-1. Watch the video on how to deal with JSON files in Python:
+1. Obejrzyj film o tym, jak radzić sobie z plikami JSON w Pythonie:
 
-   <https://youtu.be/pTT7HMqDnJw?feature=shared> 
+   [https://youtu.be/pTT7HMqDnJw?feature=shared](https://youtu.be/pTT7HMqDnJw?feature=shared) 
 
 
-1. Write a program to record voting. Voting results are saved in the voting.json file with the structure below. The program takes a person's name from the keyboard and increases the number of votes for that person by 1. If this is a new person, they are added to the list with a vote count of 1. You can run the program multiple times to add additional votes to the json file.
+1. Napisz program do rejestrowania głosowania. Wyniki głosowania są zapisywane w pliku `voting.json` o poniższej strukturze. Program pobiera imię osoby z klawiatury i zwiększa liczbę głosów dla tej osoby o 1. Jeśli jest to nowa osoba, jest dodawana do listy z liczbą głosów 1. Możesz uruchomić program wielokrotnie, aby dodać kolejne głosy do pliku json.
 
    ```python
    {
@@ -500,43 +498,43 @@ stalj@uek.krakow.pl
    # Vote for a person
    person_name = input('Name of the person you are voting for:')
    ...
- 
+   
    # Save voting data to json file
    ...
    ```
 
-1. Define a function that takes a string as input and uses a stack to reverse it. Then, write a program to reverse any text entered from the keyboard.
+1. Zdefiniuj funkcję, która przyjmuje ciąg znaków (string) jako wejście i używa stosu do jego odwrócenia. Następnie napisz program do odwracania dowolnego tekstu wprowadzonego z klawiatury.
    
-   > Hint: Push each character of the string onto the stack, then pop characters to form the reversed string.
+   > Wskazówka: Połóż (push) każdy znak ciągu na stos, a następnie zdejmij (pop) znaki, aby utworzyć odwrócony ciąg.
 
-1. Search the Internet and familiarise yourself with RPN (Reverse Polish Notation). Then, write a program that calculates RPN expressions. RPN can be conveniently evaluated using a stack structure. A user can enter from the keyboard any number, an operator (+ - \* / ) or the equal sign (=).
+1. Poszukaj w Internecie i zapoznaj się z Odwrotną Notacją Polską (RPN - Reverse Polish Notation). Następnie napisz program, który oblicza wyrażenia RPN. RPN można wygodnie obliczać przy użyciu struktury stosu. Użytkownik może wprowadzić z klawiatury dowolną liczbę, operator (+ - * / ) lub znak równości (=).
 
-   1. If the entered value is a number, push the number on to the stack
-   1. If the entered value is an operator, pop two items from the top of the stack, do the calculation, and push the result of the operation on to the stack.
-   1. If the entered value is an equal sign, pop the final result from the stack and display the result of calculation.
+   1. Jeśli wprowadzona wartość jest liczbą, połóż liczbę na stos
+   1. Jeśli wprowadzona wartość jest operatorem, zdejmij dwa elementy z góry stosu, wykonaj obliczenie i połóż wynik operacji na stos.
+   1. Jeśli wprowadzona wartość jest znakiem równości, zdejmij ostateczny wynik ze stosu i wyświetl wynik obliczenia.
 
-   Then, using the program, calculate the value of RPN expressions:
+   Następnie, używając programu, oblicz wartość wyrażeń RPN:
 
    |Expression|RPN (Reverse Polish Notation)|
    | :- | :- |
    |2 + 3 =|2 3 + =|
-   |2 \* (4 + 1)|2 4 1 + \* =|
-   |(2 + 3) \* ( 4 + 5) =|2 3 + 4 5 + \* =|
-   |8 / (3 + 1) \* (3 - 2 + 4) = |8 3 1 + / 3 2 – 4 + \* =|
+   |2 * (4 + 1)|2 4 1 + * =|
+   |(2 + 3) * ( 4 + 5) =|2 3 + 4 5 + * =|
+   |8 / (3 + 1) * (3 - 2 + 4) = |8 3 1 + / 3 2 – 4 + * =|
 
-1. Write a program that supports customer service in an office. Use the queue. Each new customer receives a ticket with an automatically assigned consecutive number and is added to the end of the queue. The next customer to be served is taken from the beginning of the queue.
+1. Napisz program obsługujący klientów w urzędzie. Użyj kolejki. Każdy nowy klient otrzymuje bilet z automatycznie przydzielonym kolejnym numerem i jest dodawany na koniec kolejki. Następny klient do obsługi jest pobierany z początku kolejki.
 
-1. JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is often used to transmit data between a server and a web application, as well as to store structured data.
+1. JSON (JavaScript Object Notation) to lekki format wymiany danych, który jest łatwy do czytania i pisania dla ludzi oraz łatwy do parsowania i generowania dla maszyn. Jest często używany do przesyłania danych między serwerem a aplikacją internetową, a także do przechowywania ustrukturyzowanych danych.
 
-   Note the key characteristics of JSON:
+   Zwróć uwagę na kluczowe cechy JSON:
 
-   * Readability: JSON is text-based, so it can be easily read by humans.
-   * Simplicity: It is built on key-value pairs.
-   * Language Agnostic: Although it derives from JavaScript, JSON is supported by many programming languages like Python, Java, PHP, C#, and more.
+   * Czytelność: JSON jest oparty na tekście, więc może być łatwo odczytywany przez ludzi.
+   * Prostota: Jest zbudowany na parach klucz-wartość.
+   * Niezależność od języka: Chociaż wywodzi się z JavaScript, JSON jest obsługiwany przez wiele języków programowania, takich jak Python, Java, PHP, C# i inne.
 
-1. The computer.json file contains sample computer data. Open the json file in an editor and review its contents. Notice that the file contains a single dictionary of data.
+1. Plik `computer.json` zawiera przykładowe dane komputera. Otwórz plik json w edytorze i przejrzyj jego zawartość. Zauważ, że plik zawiera pojedynczy słownik danych.
 
-   Then, write a program that prints information about a computer.
+   Następnie napisz program, który wypisuje informacje o komputerze.
 
    ```python
    import json
@@ -551,11 +549,11 @@ stalj@uek.krakow.pl
       print(...,':',value)
    ```
 
-1. The cities.json file contains data about selected cities in Poland. Open the json file in an editor and review its contents. Notice that the file contains an array of dictionaries.
+1. Plik `cities.json` zawiera dane o wybranych miastach w Polsce. Otwórz plik json w edytorze i przejrzyj jego zawartość. Zauważ, że plik zawiera tablicę słowników.
 
-   Then, write a program that prints information about cities.
+   Następnie napisz program, który wypisuje informacje o miastach.
 
-   > Note: using the encoding='utf-8' parameter when opening the file is necessary because the json file also contains Polish characters in city names that must be processed correctly. Remember to always use this parameter when opening files that contain characters other than those in the Latin alphabet.
+   > Uwaga: użycie parametru `encoding='utf-8'` podczas otwierania pliku jest konieczne, ponieważ plik json zawiera również polskie znaki w nazwach miast, które muszą być poprawnie przetworzone. Pamiętaj, aby zawsze używać tego parametru przy otwieraniu plików zawierających znaki inne niż te z alfabetu łacińskiego.
 
    ```python
    import json
@@ -572,17 +570,17 @@ stalj@uek.krakow.pl
       print()
    ```
 
-1. The file dogs.json contains data about dogs. Write a program that prints information about dogs younger than 5 years.
+1. Plik `dogs.json` zawiera dane o psach. Napisz program, który wypisuje informacje o psach młodszych niż 5 lat.
 
-1. The hotel's IT system contains a list of reserved rooms. The data is contained in the reservations.json file. Write a program that prints the summary information as stated below. Break your program into smaller parts defining functions.
+1. System informatyczny hotelu zawiera listę zarezerwowanych pokoi. Dane znajdują się w pliku `reservations.json`. Napisz program, który wypisuje podsumowanie informacji, jak podano poniżej. Podziel swój program na mniejsze części, definiując funkcje.
 
-   * number of rooms
-   * number of paid reservations
-   * number of unpaid reservations
-   * total value of paid reservations
-   * total value of unpaid reservations
+   * liczba pokoi
+   * liczba opłaconych rezerwacji
+   * liczba nieopłaconych rezerwacji
+   * całkowita wartość opłaconych rezerwacji
+   * całkowita wartość nieopłaconych rezerwacji
 
-1. The following program writes data to a json file. Analyze this program. Then, run the program and see if the json file is created. Display the created json file in the editor.
+1. Poniższy program zapisuje dane do pliku json. Przeanalizuj ten program. Następnie uruchom program i zobacz, czy plik json został utworzony. Wyświetl utworzony plik json w edytorze.
 
    ```python
    import json
@@ -629,15 +627,15 @@ stalj@uek.krakow.pl
    print("Data has been written to", file_name)
    ```
 
-1. Create a dictionary that describes your favorite book or movie with at least five key-value pairs. Then, create a program that writes the dictionary data to the favourite.json file.
+1. Stwórz słownik, który opisuje Twoją ulubioną książkę lub film za pomocą co najmniej pięciu par klucz-wartość. Następnie stwórz program, który zapisuje dane słownika do pliku `favourite.json`.
 
-1. Write a program that takes data from the keyboard about a purchased product:
+1. Napisz program, który pobiera z klawiatury dane o zakupionym produkcie:
 
-   * name
-   * price (real number with two decimal places)
-   * paid (yes/no)
+   * nazwa
+   * cena (liczba rzeczywista z dwoma miejscami po przecinku)
+   * czy zapłacono (tak/nie)
 
-   The program then saves the product data in the product.json file. Pay attention to the correct data types describing the product (string, float, bool).
+   Następnie program zapisuje dane produktu w pliku `product.json`. Zwróć uwagę na poprawne typy danych opisujące produkt (string, float, bool).
 
    ```python
    product = {}
@@ -649,16 +647,16 @@ stalj@uek.krakow.pl
    ...
    ```
 
-1. The website <https://api.nbp.pl/en.html> contains data on exchange rates published by the National Bank of Poland. The service provides data both in json and xml formats. Display the last ten Euro exchange rates in json format in a web browser. Then, save the data to the `euro.json` file. Finally, write a program that displays the data from the `euro.json` file in the following format:
+1. Strona internetowa [https://api.nbp.pl/en.html](https://api.nbp.pl/en.html) zawiera dane o kursach walut publikowane przez Narodowy Bank Polski. Serwis udostępnia dane zarówno w formacie json, jak i xml. Wyświetl ostatnie dziesięć kursów Euro w formacie json w przeglądarce internetowej. Następnie zapisz dane do pliku `euro.json`. Na koniec napisz program, który wyświetla dane z pliku `euro.json` w następującym formacie:
 
    ```
-   Date            Buying Rate     Selling Rate
+   Date             Buying Rate      Selling Rate
    ============================================
-   2019-10-25      3.8150          3.9820
+   2019-10-25       3.8150           3.9820
    ...
    ...
    ...
    ```
 
-   > Hint: If you are interested in API and Rest API issues, read the following article:
-   > <https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/>
+   > Wskazówka: Jeśli interesują Cię zagadnienia API i Rest API, przeczytaj poniższy artykuł:
+   > [https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/](https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/)

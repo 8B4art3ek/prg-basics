@@ -367,15 +367,15 @@ stalj@uek.krakow.pl
 
 ## 4. Practice Makes Perfect
 
-1. Read the chapter in your class textbook that covers the topics in this section.
+1. Przeczytaj rozdział w swoim podręczniku, który obejmuje tematy z tej sekcji.
 
-1. Watch the video on how to deal with regular expressions:
+1. Obejrzyj film o tym, jak radzić sobie z wyrażeniami regularnymi (regular expressions):
 
    <https://youtu.be/nxjwB8up2gI?feature=shared> 
 
-1. Note that some file operations may cause the program to stop working (e.g. there is no file on the disk with the given name). To prevent this, you can use the try-except block to handle exceptions, which are errors that can occur during the execution of a program. Exceptions might arise, for example, when attempting to divide by zero, accessing a non-existent file, or processing data in the wrong format.
+1. Zauważ, że niektóre operacje na plikach mogą spowodować zatrzymanie działania programu (np. brak pliku o podanej nazwie na dysku). Aby temu zapobiec, możesz użyć bloku `try-except` do obsługi wyjątków, czyli błędów, które mogą wystąpić podczas wykonywania programu. Wyjątki mogą się pojawić np. przy próbie dzielenia przez zero, dostępie do nieistniejącego pliku lub przetwarzaniu danych w złym formacie.
 
-   The idea behind try-except is that you place the code that might cause an error inside the try block, and if an error occurs, the except block handles it without crashing the program.
+   Idea stojąca za `try-except` jest taka: kod, który może wywołać błąd, umieszczasz w bloku `try`, a jeśli błąd wystąpi, blok `except` go obsłuży bez wywalania całego programu (crash).
 
    ```python
    try:
@@ -384,27 +384,27 @@ stalj@uek.krakow.pl
       # code to handle the exception
    ```
 
-   The program read_file.py. tries to print the contents of a file that is not on the disk. Read the contents of the program. Then run the program and see what happens. As you can see, the program stops when it encounters an error (attempting to open a nonexistent file).
+   Program `read_file.py` próbuje wydrukować zawartość pliku, którego nie ma na dysku. Przeczytaj kod tego programu. Następnie go uruchom i zobacz, co się stanie. Jak widzisz, program zatrzymuje się, gdy napotka błąd (próba otwarcia nieistniejącego pliku).
 
-   Next, see the contents of the program read_file_try_except.py, which opens and reads the contents of a file inside a try-except block. Finally, run the program. As you can see, even when an error occurs (attempting to open a nonexistent file), the program continues to run.
+   Następnie zobacz zawartość programu `read_file_try_except.py`, który otwiera i czyta zawartość pliku wewnątrz bloku `try-except`. Na koniec uruchom ten program. Jak widać, nawet gdy wystąpi błąd (próba otwarcia nieistniejącego pliku), program kontynuuje działanie.
 
-1. Write a program that displays the first five lines from the it_company.csv file and then prints 'Press Enter key...' in the next line and waits for the Enter key to be pressed. The program repeats printing the next five lines from the file, waiting for the Enter key to be pressed each time.
+1. Napisz program, który wyświetla pierwsze pięć linii z pliku `it_company.csv`, a następnie wypisuje 'Press Enter key...' w kolejnej linii i czeka na naciśnięcie klawisza Enter. Program ma powtarzać wyświetlanie kolejnych pięciu linii z pliku, czekając za każdym razem na wciśnięcie Entera.
 
-1. The file email.txt contains a raw email. Write a program that uses regular expressions to fetch and print:
+1. Plik `email.txt` zawiera surową treść e-maila. Napisz program, który używa wyrażeń regularnych, aby wyciągnąć i wypisać:
 
-   * sender email address
-   * recipient email address
-   * email subject
-   * email body
+   * adres email nadawcy
+   * adres email odbiorcy
+   * temat wiadomości
+   * treść wiadomości
 
-   For each of the above commands, define a separate function (see below) that returns the value read from the email. Place the functions in a separate module called emails.
+   Dla każdego z powyższych poleceń zdefiniuj oddzielną funkcję (patrz niżej), która zwraca wartość odczytaną z maila. Umieść funkcje w osobnym module o nazwie `emails`.
 
    * email_sender()
    * email_recipient()
    * email_subject()
    * email_body()
 
-1. Write a program that calculates the number of lines, characters and words for any text file. The user enters the name of the file from the keyboard. Use a try-except block to avoid interrupting your program when the user enters a filename that doesn't exist. Print the result of the calculation. To check if the program is working correctly, find 3 text files on the Internet and use them to test the program.Sample result:
+1. Napisz program, który oblicza liczbę linii, znaków i słów dla dowolnego pliku tekstowego. Użytkownik podaje nazwę pliku z klawiatury. Użyj bloku `try-except`, aby uniknąć przerwania programu, gdy użytkownik wpisze nazwę pliku, który nie istnieje. Wypisz wynik obliczeń. Aby sprawdzić, czy program działa poprawnie, znajdź w Internecie 3 pliki tekstowe i użyj ich do przetestowania programu. Przykładowy wynik:
 
    ```
    File name: books.txt
@@ -413,11 +413,11 @@ stalj@uek.krakow.pl
    Number of words: 703
    ```
 
-1. Write a program that calculates the number of vowels in the text entered from the keyboard. Use regular expressions.
+1. Napisz program, który oblicza liczbę samogłosek w tekście wprowadzonym z klawiatury. Użyj wyrażeń regularnych.
 
-1. The files.txt contains a list of file names. Write a program that prints only those file names whose extensions consist of exactly four characters (e.g. .html).
+1. Plik `files.txt` zawiera listę nazw plików. Napisz program, który wypisuje tylko te nazwy plików, których rozszerzenie składa się dokładnie z czterech znaków (np. `.html`).
 
-1. Convenient processing of CSV documents is possible using the CSV module. Find on the Internet how to use this module. Then write a program that, based on the it_company.csv file, prints the first name, last name and email (in the given order, without Job Title) of people employed in the position of 'Graphic Designer'. Sample result:
+1. Wygodne przetwarzanie dokumentów CSV jest możliwe dzięki modułowi CSV. Znajdź w Internecie informacje, jak używać tego modułu. Następnie napisz program, który na podstawie pliku `it_company.csv` wypisuje imię, nazwisko i email (w podanej kolejności, bez stanowiska pracy) osób zatrudnionych na stanowisku 'Graphic Designer'. Przykładowy wynik:
 
    ```
    GRAPHIC DESIGNERS
@@ -427,9 +427,10 @@ stalj@uek.krakow.pl
    ...
    ...
    ```
-1. The clothing.csv contains a list of clothing in stock. Write a program that prints those products whose price is less than 60 and whose stock is less than 40.
 
-1.  Write a program that calculates, prints, and saves to a text file integers from 1 to 100 and their second and third powers. Sample result:
+1. Plik `clothing.csv` zawiera listę ubrań w magazynie. Napisz program, który wypisuje te produkty, których cena jest niższa niż 60, a stan magazynowy jest mniejszy niż 40.
+
+1. Napisz program, który oblicza, wypisuje i zapisuje do pliku tekstowego liczby całkowite od 1 do 100 oraz ich drugie i trzecie potęgi. Przykładowy wynik:
 
       ```
       1,1,1
@@ -439,7 +440,7 @@ stalj@uek.krakow.pl
       ...
       ```
 
-1. The file books.csv contains a list of books. Write a program that copies the book data from a given genre to its corresponding file. Use functions to divide the program into logical parts.
+1. Plik `books.csv` zawiera listę książek. Napisz program, który kopiuje dane książek z danego gatunku do odpowiadającego mu pliku. Użyj funkcji, aby podzielić program na logiczne części.
 
    ```
    Genre --> Filename
