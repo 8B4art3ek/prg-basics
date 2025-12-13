@@ -3,7 +3,7 @@
 # 10 m/s = 36 km/h
 # 35 m/s = 126 km/h
 
-res = lambda ms: ms*3.6
+ms_to_kmh = lambda ms: ms*3.6
 
-print(res(10))
-print(res(35))
+print(ms_to_kmh(10))
+print(ms_to_kmh(35))
