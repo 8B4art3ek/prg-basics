@@ -2,3 +2,26 @@
 # Przykład: 
 # f("AJ972", "AQT72") → False 
 # f("9532", "K8") → True
+
+def f(player1, player2):
+    values = {
+        "A": 10,
+        "K": 10,
+        "Q": 10,
+        "J": 10,
+        "T": 10,
+    }
+
+    def score(hand):
+        total = 0
+        for card in hand:
+            if card in values:
+                total += values[card]
+            else:
+                total += int(card)
+        return total
+    return score(player1) >= score(player2)   # zwraca true/false
+
+
+print(f("AJ972", "AQT72"))
+print(f("9532", "K8"))
