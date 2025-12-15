@@ -44,3 +44,53 @@ if brackets_ok(expression3):
     print("Expression 3 brackets are correct.")
 else:
     print("Expression 3 brackets are NOT correct.")
+
+print("------------------------------------------------")
+
+def brackets_ok(expression):
+    stack = []   # stos na nawiasy otwierające
+
+    for char in expression:
+
+        # jeśli nawias otwierający – wrzucamy na stos
+        if char == '(' or char == '{' or char == '[':
+            stack.append(char)
+
+        # jeśli nawias zamykający
+        elif char == ')' or char == '}' or char == ']':
+            
+            # nie ma czego zdejmować → błąd
+            if len(stack) == 0:
+                return False
+
+            last = stack.pop()
+
+            # sprawdzamy, czy typ nawiasu się zgadza
+            if char == ')' and last != '(':
+                return False
+            if char == '}' and last != '{':
+                return False
+            if char == ']' and last != '[':
+                return False
+
+    # na końcu stos musi być pusty
+    return len(stack) == 0
+
+
+# Sprawdzamy wyrażenie1
+if brackets_ok(expression1):
+    print("Expression 1 brackets are correct.")
+else:
+    print("Expression 1 brackets are NOT correct.")
+
+# Sprawdzamy wyrażenie2
+if brackets_ok(expression2):
+    print("Expression 2 brackets are correct.")
+else:
+    print("Expression 2 brackets are NOT correct.")
+
+# Sprawdzamy wyrażenie3
+if brackets_ok(expression3):
+    print("Expression 3 brackets are correct.")
+else:
+    print("Expression 3 brackets are NOT correct.")
