@@ -1,0 +1,51 @@
+test_p1 (__main__.Test.test_p1) ... ERROR
+test_p10 (__main__.Test.test_p10) ... ok
+test_p2 (__main__.Test.test_p2) ... ok
+test_p3 (__main__.Test.test_p3) ... ok
+test_p4 (__main__.Test.test_p4) ... ok
+test_p5 (__main__.Test.test_p5) ... ok
+test_p6 (__main__.Test.test_p6) ... ok
+test_p7 (__main__.Test.test_p7) ... ERROR
+test_p8 (__main__.Test.test_p8) ... ERROR
+test_p9 (__main__.Test.test_p9) ... ERROR
+
+======================================================================
+ERROR: test_p1 (__main__.Test.test_p1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\barte\Desktop\steel\pp\11-Test2\check-test2-ZIISS1-1113.py", line 14, in test_p1
+    self.assertEqual(p1.f("{1}{[(2)(3)](4)[(5)]}"),True)
+                     ^^^^
+AttributeError: module 'p1' has no attribute 'f'
+
+======================================================================
+ERROR: test_p7 (__main__.Test.test_p7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\barte\Desktop\steel\pp\11-Test2\check-test2-ZIISS1-1113.py", line 49, in test_p7
+    self.assertEqual(p7.f(email)["pencils"],12)
+                     ^^^^
+AttributeError: module 'p7' has no attribute 'f'
+
+======================================================================
+ERROR: test_p8 (__main__.Test.test_p8)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\barte\Desktop\steel\pp\11-Test2\check-test2-ZIISS1-1113.py", line 55, in test_p8
+    self.assertEqual(p8.f("2KTQ7A"),"AKQT72")
+                     ^^^^
+AttributeError: module 'p8' has no attribute 'f'
+
+======================================================================
+ERROR: test_p9 (__main__.Test.test_p9)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\barte\Desktop\steel\pp\11-Test2\check-test2-ZIISS1-1113.py", line 61, in test_p9
+    self.assertEqual(p9.f(post1,post2),["eeeee","ggg","hhh","jjjjj"])
+                     ^^^^
+AttributeError: module 'p9' has no attribute 'f'
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.013s
+
+FAILED (errors=4)
